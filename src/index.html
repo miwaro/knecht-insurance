@@ -102,20 +102,20 @@
             
             <!-- Quote Form -->        
             <aside id="sidebar">
-                <div class ="dark">
+                <div class="dark" id="email-form-container">
                     <h2>Get A Quote!</h2>
-                    <form class="quote">
+                    <form id="email-form" class="quote">
                         <div>
                             <label>Name</label>
-                            <input type="text" placeholder="Name">
+                            <input type="text" id="form-name" placeholder="Name">
                         </div>
                         <div>
                             <label>Email</label>
-                            <input type="email" placeholder="Email Address">
+                            <input type="email" id="form-email" placeholder="Email Address">
                         </div>
                         <div>
                             <label>Types of Insurance</label>
-                            <select name="Type of Insurance Needed">
+                            <select id="form-types" name="Type of Insurance Needed">
                                 <option value="">Type of Insurance Needed</option>
                                 <option value="auto">Auto</option>
                                 <option value="home">Home</option>
@@ -125,7 +125,7 @@
                         </div>
                         <div>
                             <label>Message</label>
-                            <textarea placeholder="Message"></textarea>
+                            <textarea id="form-message"></textarea>
                         </div>
                         <button class="button_1" type="submit">Send</button>
                     </form>
@@ -151,5 +151,8 @@
             
             <p>Knecht Insurance, Copyright &copy; 2019 </p>
         </footer>
+
+        <script src="./js/emailer.js"></script>
+
     </body>
 </html>
