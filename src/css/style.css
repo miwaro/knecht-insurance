@@ -359,6 +359,14 @@ footer {
     margin: 0 20px;
 }
 
+.mobile-nav-bar {
+    display: none;
+}
+
+.large-screen-nav-bar {
+    display: block;
+}
+
 .social-icons i {
     background-color: grey;
 }
@@ -390,6 +398,36 @@ footer {
     
      #sidebar{
         padding-top: 100px;
+    }
+}
+
+@media (max-width: 450px) {
+    .mobile-nav-bar {
+        display: block;
+        font: 50px/1.5 sans-serif, Helvetica, sans-serif;
+        width:100%;
+        box-shadow: 0 3px 3px #535353;
+        background-color: rgb(102, 125, 148);
+        min-height: 50px; 
+    }
+
+    .mobile-nav-hamburger > img {
+        height: 40px;      
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .large-screen-nav-bar {
+        display: none;
+    }
+
+    .highlight
+    .insure {
+        font-size: 30px;
+        text-align: center;
+        padding-right: 0;
     }
 }
 

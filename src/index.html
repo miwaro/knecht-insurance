@@ -11,6 +11,15 @@
         <script src="/reload/reload.js"></script> 
     </head>
     <body>
+        <!--Copy of Nav Bar that will be hidden by default but then displayed in the mobile size after clicking on the hamburger-->
+        <div class="mobile-nav-bar">
+            <div class="mobile-nav-hamburger">
+                <img src="./img/hamburger.png" id="hamburger">
+            </div>
+            <div id="mobile-nav-links" class="mobile-nav-links hide">
+                links
+            </div>
+        </div>
         <a class="header-link" href="index.html"></a>
         <header >     
             <div id="branding">
@@ -25,7 +34,7 @@
         </a>
 
         <!-- Nav Bar -->
-        <div class="nav-bar">
+        <div class="nav-bar large-screen-nav-bar">
             <nav>
                 <ul>
                     <li class="current nav-item"><a href="index.html">Home</a></li>
@@ -153,6 +162,7 @@
         </footer>
 
         <script src="./js/emailer.js"></script>
+        <script src="./js/script.js"></script>
 
     </body>
 </html>
