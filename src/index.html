@@ -10,25 +10,41 @@
         <script src="https://kit.fontawesome.com/5ab285bfd4.js"></script>
         <script src="/reload/reload.js"></script> 
     </head>
+    
     <body>
-        <a class="header-link" href="index.html"></a>
-        <header >     
-            <div id="branding">
-                <h1>
-                    <span class="highlight">Knecht </span>
-                    <span class="insure">Insurance</span>
-                    <img class="firefly-img" src="./img/firefly.png" alt="Image" height="60" width="85">
-                    <span class="firefly-header">a Firefly Agency</span>
-                </h1>
+        <!--Copy of Nav Bar that will be hidden by default but then displayed in the mobile size after clicking on the hamburger-->
+        <div class="mobile-nav-bar">
+            <div class="mobile-nav-hamburger">
+                <img src="./img/hamburger.png" id="hamburger">
             </div>
-        </header>
+            <div id="mobile-nav-links" class="mobile-nav-links hide">
+                <ul>
+                    <li class="nav-item"><a href="about.html">About</a></li>
+                    <li class="nav-item"><a href="services.html">Services</a></li>
+                    <li class="nav-item"><a href="staff.html">Staff</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>  
+                </ul> 
+            </div>
+        </div>
+        
+        <!--Header-->
+        <a class="header-link" href="index.html">
+            <header>     
+                <div>
+                    <h1>
+                        <span class="banner">Knecht</span>
+                        <span><img class="firefly-img" src="./img/firefly.png" alt="Image" height="40" width="60"></span>
+                        <span class="banner">Insurance</span>
+                    </h1>                
+                </div>
+                <span class="firefly-header">a Firefly Agency</span> 
+            </header>
         </a>
 
         <!-- Nav Bar -->
-        <div class="nav-bar">
+        <div class="nav-bar large-screen-nav-bar">
             <nav>
                 <ul>
-                    <li class="current nav-item"><a href="index.html">Home</a></li>
                     <li class="nav-item"><a href="about.html">About</a></li>
                     <li class="nav-item"><a href="services.html">Services</a></li>
                     <li class="nav-item"><a href="staff.html">Staff</a></li>
@@ -38,16 +54,18 @@
         </div>
 
         <!-- Showcase -->
-        <section id="showcase" class="container dark">
-            <div class="showcase-text">
-               <p class="our-advantage">Our Advantage-</p>
-               <p class="slogan">Let us work to find the right insurance carrier fit for you.</p>
-            </div> 
-            <div class="showcase-container">       
-                <img src="./img/showcase.jpg">
-           
+        <div id="showcase" class="container">
+            <div class="showcase-text container">
+                <p class="slogan">
+                    <span class="our-advantage">Our Advantage: </span> 
+                    Let us work to find the right insurance carrier fit for you.
+                </p>
             </div>
-        </section>
+            <div class="showcase-image container">       
+                <img src="./img/showcase.jpg">
+            </div>        
+        </div>
+           
         
         <!--The 4 Insurance Types pictures -->
         <section id="boxes" class="container">
@@ -94,10 +112,10 @@
                         blanditiis iusto, veritatis inventore dolorum nesciunt 
                     fugit aliquid quod! Beatae ea nam debitis delectus doloremque quis iste quidem quibusdam.
                 </p>
-                <div class="helfpul-links-container">
+                <!-- <div class="helfpul-links-container">
                     <h2>Helpful Links</h2>
                     <img src="./img/business-card.jpg">
-                </div>
+                </div> -->
             </section>
             
             <!-- Quote Form -->        
@@ -153,6 +171,7 @@
         </footer>
 
         <script src="./js/emailer.js"></script>
+        <script src="./js/script.js"></script>
 
     </body>
 </html>
