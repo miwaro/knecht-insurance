@@ -4,7 +4,7 @@ body {
     background-color:#eaeaea;
 }
 
-.container{
+.container {
   width:80%;
   max-width: 1100px;
   margin: 0 auto;
@@ -16,7 +16,7 @@ ul {
     padding:0;
 }
 
-.button_1{
+.button_1 {
     height:38px;
     background:#e8491d;
     border:0;
@@ -33,59 +33,63 @@ ul {
     color: floralwhite; 
 }
 
-/*Header **/
-header{
-    background:#35424a;
-    color:#e8491d;
-    padding-top:30px;
-    height: 150px;
-    border-bottom:#e8491d 3px solid;
-}
-
 .header-link {
     text-decoration: none;
 }
 
-header #branding h1 {
-    text-align: center;  
-    margin:0 auto;
-    padding: 0;
-    position: relative;
-    max-width: 800px;    
-}
-
-.insure {
-    font-size: 89px;
-    padding-left: 60px;
-    font-weight: lighter;
-}
-
-/*"knecht"*/
-header .highlight {
+header {
+    background:#35424a;
     color:#e8491d;
-    font-size: 89px;
+    padding-top:10px;
+    height: 150px;
+    border-bottom:#e8491d 3px solid;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.banner {
+    font-size: 79px;
+    color:#e8491d;
     font-weight: lighter;
-    padding-right:60px;
-    letter-spacing: 3px;
- }
+    padding-bottom: 0;
+}
+
+.firefly-img {
+    display: block;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 27px;
+}
 
 header .firefly-header {
+    display: flex;
+    justify-content: center;
     font-size: 20px;
     color: floralwhite;
     font-weight: lighter;
-    position: absolute;
-    top: 95px;
-    right: 371px;   
+    padding-right: 70px;
+    margin-top: -5px;
 }
 
-/*firefly logo */
-header .firefly-img {
-    position: absolute;
-    top: 25px;
-    right: 392px;
+#hamburger {
+    margin: 0;
+    padding-left: 10px;
 }
 
-/*navbar */
+#mobile-nav-links a {
+    color: floralwhite;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 5px;
+}
+
 .nav-bar {
     font: 50px/1.5 sans-serif, Helvetica, sans-serif;
     width:100%;
@@ -122,55 +126,58 @@ header .firefly-img {
 
 .nav-bar a:hover {
     color: #e8491d;
-    font-weight: bold;
     transition: all 0.4s ease;
 }
 
-/*SHOWCASE*/
 #showcase {
-    display: flex;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 3px 3px #030116;       
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 450px;
+    margin: 50px auto;
 }
 
-.showcase-text{
-    flex: 1;
-    padding: 25px 25px 0 30px;
-    color:floralwhite;
-}
-
-.our-advantage {
-    font-family: sans-serif, Arial, Helvetica;
-    font-size: 35px;
-    font-weight: bold;
-    padding-left: 10px;
-    margin-bottom: 20px;
-}
-
-.slogan {
-    font-family: sans-serif, Arial, Helvetica;
-    font-weight: lighter;
-    font-size: 30px;
-    line-height: 2;
-    margin-top: 10px;
-    margin-right: 60px;
-    padding: 0 70px 0 15px;
+#showcase > * {
+    width: 100%;
+    max-height: 450px;
 }
 
 #showcase img {
-    height: 350px;
-    transform: scale(1.4);
-    max-width: 700px;
+    display: block;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 3px 3px #030116;
+    max-height: 450px;
 }
 
-/* Boxes */
+.showcase-text {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+}
+
+.showcase-image {
+    border-radius: 0 10px 10px 0;
+    overflow: hidden;
+}
+
+.our-advantage {
+    flex-wrap: wrap;
+    color: #e8491d;
+}
+
+.slogan {
+    flex-wrap: wrap;
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 30px;
+    width: 1100px;
+    margin: 0 auto;
+    background-color:#35424a;
+    color:floralwhite
+} 
+
 #boxes {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     margin: 20px auto; 
-
 }
 
 #boxes .container {
@@ -224,8 +231,6 @@ header .firefly-img {
     font-weight: bold;
 }
 
-/*Welcome*/
-
 section#welcome {
     border-radius: 5px;
     max-width: 700px;
@@ -257,20 +262,19 @@ section#welcome {
     margin: 0 auto;
 }
 
-.helfpul-links-container {
+/* .helfpul-links-container {
     background-color: #ffffff;
-}
+} */
 
 /*quote form */
 #sidebar {
     flex-basis: 300px;
-    border-radius: 5px;
     font-family: sans-serif, Arial, Helvetica;
     padding-top: 30px;  
 }
 
 #sidebar .dark {
- 
+    border-radius: 10px 10px 10px 10px;
     padding: 0 15px;
     width: 300px;
 }
@@ -330,7 +334,6 @@ section#welcome {
     display: block;
 }
 
-/* services */
 ul#services li {
     list-style: none;
     padding: 20px;
@@ -339,7 +342,6 @@ ul#services li {
     background: e6e6e6;
 }
 
-/*footer*/
 footer {
     padding: 40px;
     margin-top:300px;
@@ -371,35 +373,29 @@ footer {
     background-color: grey;
 }
 
-/* Media Queries */
-@media(max-width: 768px){
-    header #branding h1,
-    .nav-bar li,
-    .nav-bar ul,
-     #boxes .box, 
-    article#main-col,
-    aside#sidebar {
-        float:none;
-        text-align: center;
-        width: 100%;
-    }
-    
-    header {
-        padding-bottom: 20px;
-    }
 
-    #showcase .container {
-        padding-top: 20px;
-    }
 
-    #showcase h1 {
-        margin-top: 40px;
+
+
+
+
+/* @media (max-width: 1374px) {
+    .banner {
+        font-size: 69px;
     }
-    
-     #sidebar{
-        padding-top: 100px;
+} */
+
+/*fix our advantage */
+/* @media (max-width: 1280px) {
+    #showcase {
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif, Arial, Helvetica;
+        font-size: 25px;
+        padding-left: 50px;
+        margin-bottom: 20px;
     }
-}
+} */
 
 @media (max-width: 450px) {
     .mobile-nav-bar {
@@ -408,11 +404,8 @@ footer {
         width:100%;
         box-shadow: 0 3px 3px #535353;
         background-color: rgb(102, 125, 148);
-        min-height: 50px; 
-    }
-
-    .mobile-nav-hamburger > img {
-        height: 40px;      
+        min-height: 50px;
+        border-bottom:#e8491d 3px solid;
     }
 
     .hide {
@@ -423,8 +416,11 @@ footer {
         display: none;
     }
 
-    .highlight
-    .insure {
+    header {
+        display: none;
+    }
+
+    header {
         font-size: 30px;
         text-align: center;
         padding-right: 0;
@@ -433,6 +429,19 @@ footer {
 
 
 
+
+    /* #showcase {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 800px;
+    } */
+    
+    /* #boxes {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    } */
 
 
 
