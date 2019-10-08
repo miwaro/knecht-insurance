@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-  width:80%;
+  width: 80%;
   max-width: 1100px;
   margin: 0 auto;
   overflow:hidden;  
@@ -184,7 +184,9 @@ header .firefly-header {
 #boxes {
     grid-area: a;
     display: flex;
-    margin: 20px auto; 
+    margin: 20px auto;
+    max-width: 1100px;
+    overflow:hidden;  
 }
 
 .box-container {
@@ -379,13 +381,34 @@ footer {
 }
 
 @media (max-width: 1340px) {
-    #boxes.container {
-        display: grid;
-        grid-template: 260px 260px / 270px 270px;
+    .home-content-grid-container {
+        grid-template-areas: 
+            "a a a a c c c"
+            "b b b b b b b";
     }
-    #sidebar .dark {
-        float: right;
-        margin-bottom: 1500px;
+
+    #boxes {
+        justify-self: end;
+        margin-left: -20px;
+        margin-right: 0;
+        display: grid;
+        grid-template: 285px 285px / 295px 295px;
+        justify-items: end;
+        /* padding-left: 30px; */
+    }
+
+    #sidebar h2 {
+        padding-bottom: 25px;
+        padding-top: 35px;
+    }
+
+    #email-form-container {
+        height: 536px;
+        margin-top: -8px;
+    }
+
+    .quote {
+        padding: 10px 15px 15px 15px;
     }
 }
 
