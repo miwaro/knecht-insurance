@@ -233,7 +233,7 @@ header .firefly-header {
     font-weight: bold;
 }
 
-section#welcome {
+#welcome {
     grid-area: b;
     justify-self: end;
     padding-right: 90px;
@@ -394,7 +394,6 @@ footer {
         display: grid;
         grid-template: 285px 285px / 295px 295px;
         justify-items: end;
-        /* padding-left: 30px; */
     }
 
     #sidebar h2 {
@@ -410,6 +409,27 @@ footer {
     .quote {
         padding: 10px 15px 15px 15px;
     }
+
+    #welcome {
+        justify-self: center;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 1215px) {
+    #boxes {
+        grid-template: 270px 270px / 280px 280px;
+    }
+}
+
+@media (max-width: 1165px) {
+    #boxes {
+        grid-template: 260px 260px / 270px 270px;
+    }
+}
+
+@media (max-width: 1130px) {
+   
 }
 
 @media (max-width: 450px) {
