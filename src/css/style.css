@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-  width:80%;
+  width: 80%;
   max-width: 1100px;
   margin: 0 auto;
   overflow:hidden;  
@@ -174,9 +174,19 @@ header .firefly-header {
     line-height: 64px;
 } 
 
+.home-content-grid-container {
+    display: grid;
+    grid-template-areas: 
+        "a a a a a a a"
+        "b b b b c c c";
+}
+
 #boxes {
+    grid-area: a;
     display: flex;
-    margin: 20px auto; 
+    margin: 20px auto;
+    max-width: 1100px;
+    overflow:hidden;  
 }
 
 .box-container {
@@ -223,43 +233,39 @@ header .firefly-header {
     font-weight: bold;
 }
 
-section#welcome {
+#welcome {
+    grid-area: b;
+    justify-self: end;
+    padding-right: 90px;
+    padding-top: 25px;
     border-radius: 5px;
-    max-width: 700px;
+    max-width: 610px;
     max-height: 340px;
 }
 
 #welcome h2 {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     font-size:35px;
     font-family: sans-serif, Arial, Helvetica;
     color: #35424a;
-    margin: 25px 0px 0px 0px;
+    margin: 25px auto;
 }
 
 #welcome p {
     display: flex;
     justify-content: center;
+    text-align: center;
     font: 24px/1.5 Arial, Helvetica, sans-serif;
     color: #35424a;
-    padding: 10px 50px 40px 0;
+    padding: 10px 15px;
     border-bottom: 1px #cccccc solid;
 }
 
-/* welcome message and quote form*/
-.home-content-flex-container {
-    display: flex; 
-    justify-content: space-between;
-    margin: 0 auto;
-}
-
-/* .helfpul-links-container {
-    background-color: #ffffff;
-} */
-
 /*quote form */
 #sidebar {
+    grid-area: c;
+    justify-self: start;
     flex-basis: 300px;
     font-family: sans-serif, Arial, Helvetica;
     padding-top: 30px;  
@@ -375,14 +381,55 @@ footer {
 }
 
 @media (max-width: 1340px) {
-    #boxes.container {
+    .home-content-grid-container {
+        grid-template-areas: 
+            "a a a a c c c"
+            "b b b b b b b";
+    }
+
+    #boxes {
+        justify-self: end;
+        margin-left: -20px;
+        margin-right: 0;
         display: grid;
+        grid-template: 285px 285px / 295px 295px;
+        justify-items: end;
+    }
+
+    #sidebar h2 {
+        padding-bottom: 25px;
+        padding-top: 35px;
+    }
+
+    #email-form-container {
+        height: 536px;
+        margin-top: -8px;
+    }
+
+    .quote {
+        padding: 10px 15px 15px 15px;
+    }
+
+    #welcome {
+        justify-self: center;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 1215px) {
+    #boxes {
+        grid-template: 270px 270px / 280px 280px;
+    }
+}
+
+@media (max-width: 1165px) {
+    #boxes {
         grid-template: 260px 260px / 270px 270px;
     }
-    #sidebar .dark {
-        float: right;
-        margin-bottom: 1500px;
-    }
+}
+
+@media (max-width: 1130px) {
+   
 }
 
 @media (max-width: 450px) {
