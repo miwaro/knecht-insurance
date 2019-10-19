@@ -2,6 +2,7 @@ body {
     padding:0px;
     margin:0px;
     background-color:#eaeaea;
+    color: #F5F5F5;
 }
 
 .container {
@@ -37,10 +38,10 @@ ul {
 
 header {
     background:#35424a;
-    color:#e8491d;
-    padding-top:10px;
+    color:#F5F5F5;
+    padding-top: 10px;
     height: 150px;
-    border-bottom:#e8491d 3px solid;
+    border-bottom: #e8491d 3px solid;
 }
 
 header h1 {
@@ -52,7 +53,8 @@ header h1 {
 
 .banner {
     font-size: 79px;
-    color:#e8491d;
+    font-style: italic;
+    color: #F5F5F5;
     font-weight: lighter;
     padding-bottom: 0;
     letter-spacing: 2px;
@@ -61,8 +63,8 @@ header h1 {
 .firefly-img {
     display: block;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 29px;
+    padding-right: 29px;
     padding-top: 27px;
 }
 
@@ -71,7 +73,7 @@ header .firefly-header {
     justify-content: center;
     font-size: 18px;
     color: floralwhite;
-    padding-right: 82px;
+    padding-right: 106px;
     margin-top: -8px;
 }
 
@@ -120,7 +122,7 @@ header .firefly-header {
 }
 
 .nav-bar a:hover {
-    color: #e8491d;
+    color: #F5F5F5;
     transition: all 0.4s ease;
 }
 
@@ -131,7 +133,7 @@ header .firefly-header {
 
 #showcase {
     display: grid;
-    grid-template-columns: 1fr 2.5fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 425px;
     margin: 40px auto;
 }
@@ -142,43 +144,42 @@ header .firefly-header {
 }
 
 #showcase img {
-    display: block;
-    border-radius: 0 10px 10px 0;
-    box-shadow: 0 300px 3px #030116;
     max-height: 450px;
 }
 
 .showcase-text {
-    display: flex;
-    justify-content: center;
     border-radius: 10px 0 0 10px;
     background-color:#35424a;
+    color: #F5F5F5;
+    /* font-family: sans-serif, Arial, Helvetica; */
+    font-family: serif, 'Times New Roman';
+    text-align: center;
 }
 
-.our-advantage {
-    margin: 0px auto;
-    padding: 0;
-    color: #e8491d;
-}
-
-
-.slogan {
-    display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-    font-family: sans-serif, Arial, Helvetica;
+.showcase-text h3 {
+    margin: 40px 0 20px 0;
     font-size: 35px;
-    width: 1100px;
-    margin: 10px 26px 10px 26px;
-    color:floralwhite;
-    line-height: 64px;
-} 
+    color:#e8491d;
+}
+
+.showcase-text h5 {
+    font-size: 30px;
+    margin: 0 30px 0 30px;
+    line-height: 2;
+}
+
+.scroll-image {
+    padding: 30px;
+    background-color: #35424a;
+    text-align: center;
+}
 
 .home-content-grid-container {
     display: grid;
     grid-template-areas: 
         "a a a a a a a"
         "b b b b c c c";
+    grid-gap: 10px;
 }
 
 #boxes {
@@ -229,7 +230,7 @@ header .firefly-header {
 }
 
 #boxes h3:hover {
-    background-color: #e8491d;
+    background-color:#e8491d;;
     font-weight: bold;
 }
 
@@ -279,7 +280,7 @@ header .firefly-header {
 
 #sidebar h2 {
     display: flex;
-    font-size: 25px;
+    font-size: 30px;
     justify-content: center;
     color: #e8491d;
     padding-top: 30px;
@@ -364,11 +365,11 @@ footer {
 }
 
 .mobile-nav-hamburger {
-    border-bottom:#e8491d 3px solid;
+    border-bottom:#F5F5F5 3px solid;
 }
 
 .mobile-nav-item a:hover {
-        background-color: #e8491d;
+        background-color: #F5F5F5;
         font-weight: bold;
 }
 
@@ -386,7 +387,6 @@ footer {
             "a a a a c c c"
             "b b b b b b b";
     }
-
     #boxes {
         justify-self: end;
         margin-left: -20px;
@@ -395,21 +395,17 @@ footer {
         grid-template: 285px 285px / 295px 295px;
         justify-items: end;
     }
-
     #sidebar h2 {
         padding-bottom: 25px;
         padding-top: 35px;
     }
-
     #email-form-container {
         height: 536px;
         margin-top: -8px;
     }
-
     .quote {
         padding: 10px 15px 15px 15px;
     }
-
     #welcome {
         justify-self: center;
         padding-right: 0;
@@ -420,16 +416,134 @@ footer {
     #boxes {
         grid-template: 270px 270px / 280px 280px;
     }
+    #email-form-container {
+        height: 520px;
+        margin-top: -8px;
+    }
+    #sidebar .button_1 {
+        margin-top: -10px;
+        align-content: center;
+    }    
 }
 
 @media (max-width: 1165px) {
     #boxes {
         grid-template: 260px 260px / 270px 270px;
     }
-}
+    #email-form-container {
+        height: 510px;
+        margin-top: -8px;
+    }
+    #showcase {
+        grid-template-columns: 1fr;
+        grid-template-rows: 410px 150px;
+        grid-template-areas: 
+            "picture"
+            "text";
+    }
+    #showcase img {
+        width: 100%;
+        max-height: 410px;
+    }
+    .showcase-image {
+        border-radius: 10px 10px 0 0;
+        overflow: hidden;
+        grid-area: picture;
+    }
+    .showcase-text {
+        border-radius: 0 0 10px 10px;
+        grid-area: text;
+        border-top:#e8491d 3px solid;
+    }
+    .showcase-text h3 {
+        display: none;
+    }
+    .showcase-text h5 {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 1;
+        margin: 30px auto 20px auto;
+    }
+    .scroll-image {
+        padding: 0;
+        max-width: 200px;
+    }
+} 
 
 @media (max-width: 1130px) {
-   
+    .home-content-grid-container {
+        grid-template-areas: 
+            "a a a a a c c c"
+            "b b b b b b b b";
+            padding-right: 35px;
+    }
+    #boxes {
+        justify-self: end;
+        display: grid;
+        grid-template: 270px 270px / 280px 280px;
+        justify-items: end;
+    }
+    #boxes img {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        color: floralwhite;  
+        width:  215px;
+        height: 180px;
+        border-radius: 10px 10px 0 0;
+        border: rgb(255, 255, 255) 1px solid;
+    }
+    #boxes h3 {
+        display: flex;
+        justify-content: center;
+        width: 215px;
+        margin: 0;
+        border-radius: 0 0 10px 10px;
+        padding: 12px 0;
+        background-color: rgb(102, 125, 148);
+        color:floralwhite;
+        text-transform: uppercase;
+        font-family: sans-serif, Arial, Helvetica;
+        font-size: 24px;
+        letter-spacing: 1px;  
+    }
+    .box-container {
+        display: block;
+        width: 250px;
+    }
+}
+
+/*ipad mini size*/
+@media (max-width: 768px) {
+    .home-content-grid-container {
+        grid-template-areas: 
+            "a a a a"
+            "a a a a"
+            "b b b c";
+    }
+    .banner {
+        font-size: 69px;
+        font-style: italic;
+        color: #F5F5F5;
+        font-weight: lighter;
+        padding-bottom: 0;
+        letter-spacing: 2px;
+    }
+    header .firefly-header {
+        display: none;
+        justify-content: center;
+        font-size: 18px;
+        color: floralwhite;
+        padding-right: 101px;
+        margin-top: -8px;
+    }
+    header {
+        background: #35424a;
+        color: #F5F5F5;
+        padding-bottom: 45px;
+        height: 75px;
+        border-bottom: #F5F5F5 3px solid;
+    }
 }
 
 @media (max-width: 450px) {
