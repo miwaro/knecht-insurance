@@ -161,12 +161,15 @@ header h1 {
 #showcase {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 396px;
+    grid-template-rows: 400px;
     margin: 40px auto;
+    justify-items: center;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 #showcase img {
-    max-width: 96%;
+    max-width: 100%;
     border-radius: 0 10px 10px 0;
 }
 
@@ -371,8 +374,9 @@ footer p {
     #boxes {
         display: grid;
         grid-template: 340px 340px / 340px 340px;
-        margin-right: 0;
-        margin-left: 117px;
+        margin-right: auto;
+        margin-left: auto;
+        justify-items: center;
     }
     #boxes img {
         width: 300px;
@@ -380,14 +384,13 @@ footer p {
     }
     #email-form-container {
         height: 600px;
-        margin-right: 120px;
     }
     #sidebar .dark {
         width: 275px;
     }
     #sidebar h2 {
         padding-bottom: 25px;
-    font-size: 40px;
+        font-size: 40px;
     }
     #sidebar div {
         padding: 10px;
@@ -429,7 +432,7 @@ footer p {
         max-height: 450px;
         max-width: 100%;
         width: 900px;
-}
+    }
     .showcase-text {
         border-radius: 0 0 10px 10px;
         grid-area: text;
@@ -449,9 +452,7 @@ footer p {
         padding: 0;
         width: 200px;
     }
-} 
 
-@media (max-width: 1130px) {
     .home-content-grid-container {
         grid-template-areas: 
             "a a a a a c c c"
