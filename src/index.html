@@ -14,8 +14,10 @@
     <body>
         <!--Copy of Nav Bar that will be hidden by default but then displayed in the mobile size after clicking on the hamburger-->
         <div class="mobile-nav-bar">
-            <div class="mobile-nav-hamburger">
-                <img src="./img/hamburger.png" id="hamburger">
+            <div id="hamburger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
             <div id="mobile-nav-links" class="mobile-nav-links hide">
                 <ul>
@@ -33,7 +35,7 @@
                 <div>
                     <h1>
                         <span class="banner">Knecht</span>
-                        <span><img class="firefly-img" src="./img/firefly.png" alt="Image" height="45" width="65"></span>
+                        <span><img class="firefly-img" src="./img/firefly.png" alt="Image" height="50" width="70"></span>
                         <span class="banner">Insurance</span>
                     </h1>                
                 </div>
@@ -64,47 +66,47 @@
                 <img src="./img/showcase.jpg">
             </div>        
         </div>
-           
+     
+    <!--The 4 Insurance Types pictures -->
     <section class="home-content-grid-container">
-            <!--The 4 Insurance Types pictures -->
         <section id="boxes" class="container">
             <div class="box-container">
                 <a href="./types-of-insurance/auto.html">          
-                    <div class="box">
+                    <div class="auto-box">
                         <img src="./img/auto.jpg">
                         <h3>Auto</h3>
                     </div>
                 </a> 
             </div>
             <div class="box-container">
-            <a href="./types-of-insurance/home.html"> 
-                <div class="box">
-                    <img src="./img/home.jpg">
-                    <h3>Home</h3>
-                </div>
-            </a>
+                <a href="./types-of-insurance/home.html"> 
+                    <div class="home-box">
+                        <img src="./img/home.jpg">
+                        <h3>Home</h3>
+                    </div>
+                </a>
             </div>
             <div class="box-container">
-            <a href="./types-of-insurance/business.html">   
-                <div class="box">
-                    <img src="./img/business.jpg">
-                    <h3>Business</h3>
-                </div>
-            </a>
+                <a href="./types-of-insurance/business.html">   
+                    <div class="business-box">
+                        <img src="./img/business.jpg">
+                        <h3>Business</h3>
+                    </div>
+                </a>
             </div>
             <div class="box-container">
-            <a href="./types-of-insurance/life.html">
-                <div class="box">
-                    <img src="./img/life.jpg">
-                    <h3>Life</h3>
-                </div>
-            </a>
+                <a href="./types-of-insurance/life.html">
+                    <div class="life-box">
+                        <img src="./img/life.jpg">
+                        <h3>Life</h3>
+                    </div>
+                </a>
             </div>
         </section>
         
         <!-- Welcome Section -->   
-        <section id="welcome">
-            <h2>Welcome to Knecht Insurance</h2>
+        <section id="welcome" class="container">
+            <h2>Welcome to <span class="welcome-knecht"> Knecht Insurance </span></h2>
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam est suscipit
                     blanditiis iusto, veritatis inventore dolorum nesciunt 
@@ -113,37 +115,38 @@
         </section>
             
             <!-- Quote Form -->        
-            <aside id="sidebar">
-                <div class="dark" id="email-form-container">
-                    <h2>Get A Quote!</h2>
-                    <form id="email-form" class="quote">
-                        <div>
-                            <label>Name</label>
-                            <input type="text" id="form-name" placeholder="Name">
-                        </div>
-                        <div>
-                            <label>Email</label>
-                            <input type="email" id="form-email" placeholder="Email Address">
-                        </div>
-                        <div>
-                            <label>Types of Insurance</label>
-                            <select id="form-types" name="Type of Insurance Needed">
-                                <option value="">Type of Insurance Needed</option>
-                                <option value="auto">Auto</option>
-                                <option value="home">Home</option>
-                                <option value="business">Business</option>
-                                <option value="life">Life</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label>Message</label>
-                            <textarea id="form-message"></textarea>
-                        </div>
-                        <button class="button_1" type="submit">Send</button>
-                    </form>
-                </div>
-            </aside>
-        </section> 
+        <aside id="sidebar">
+            <div class="dark" id="email-form-container">
+                <!-- <span><img class="firefly-quote" src="./img/firefly.png" alt="Image" height="35" width="55"></span> -->
+                <h2>Get A Quote!</h2>
+                <form id="email-form" class="quote">
+                    <div>
+                        <label>Name</label>
+                        <input type="text" id="form-name" placeholder="Name">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" id="form-email" placeholder="Email Address">
+                    </div>
+                    <div>
+                        <label>Types of Insurance</label>
+                        <select id="form-types" name="Type of Insurance Needed">
+                            <option value="">Type of Insurance Needed</option>
+                            <option value="auto">Auto</option>
+                            <option value="home">Home</option>
+                            <option value="business">Business</option>
+                            <option value="life">Life</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Message</label>
+                        <textarea id="form-message"></textarea>
+                    </div>
+                    <button class="button_1" type="submit">Send</button>
+                </form>
+            </div>
+        </aside>
+    </section> 
 
         
         <!-- footer -->       

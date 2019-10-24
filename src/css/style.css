@@ -1,15 +1,12 @@
 body {
     padding:0px;
     margin:0px;
-    background-color:#eaeaea;
-    color: #F5F5F5;
+    background-color: #F5F5F5;
 }
 
 .container {
-  width: 80%;
   max-width: 1100px;
   margin: 0 auto;
-  overflow:hidden;  
 }
 
 ul {
@@ -19,12 +16,12 @@ ul {
 
 .button_1 {
     height: 38px;
-    background:#e8491d;
+    background:#f16037;
     border: 0;
     border-radius: 10px;
     padding: 0 20px;
     color:floralwhite;
-    font-size: 18px;
+    font-size: 18px;   
 }
 
 .dark {
@@ -41,7 +38,7 @@ header {
     color:#F5F5F5;
     padding-top: 10px;
     height: 150px;
-    border-bottom: #e8491d 3px solid;
+    border-bottom: #f16037 3px solid;
 }
 
 header h1 {
@@ -72,22 +69,39 @@ header .firefly-header {
     display: flex;
     justify-content: center;
     font-size: 18px;
-    color: floralwhite;
+    color: #ccc;
     padding-right: 106px;
     margin-top: -8px;
 }
 
-#hamburger {
-    margin: 0;
-    padding-left: 15px;
+#mobile-nav-links li {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 #mobile-nav-links a {
     color: floralwhite;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 25px;
-    padding: 5px 15px;
+    font-size: 22px;
+    padding-bottom: 5px;
+}
+    
+#hamburger-menu {
+    margin: 15px auto 10px 15px;
+    cursor: pointer;
+}
+
+#hamburger-menu > div {
+    width: 35px;
+    height: 5px;
+    background-color: #F5F5F5;
+    margin: 6px 0;
+}
+
+#hamburger-menu.active > div {
+    background-color: #f16037;
 }
 
 .nav-bar {
@@ -116,21 +130,16 @@ header .firefly-header {
     padding: 5px;
 }
 
-/* not sure this is doing anything */
 .nav-bar .current a { 
     font-weight: bold;
 }
 
 .nav-bar a:hover {
-    color: #F5F5F5;
+    color: #f16037;
     transition: all 0.4s ease;
 }
 
-#showcase > * {
-    width: 100%;
-    max-height: 450px;
-}
-
+/*showcase*/
 #showcase {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -151,7 +160,6 @@ header .firefly-header {
     border-radius: 10px 0 0 10px;
     background-color:#35424a;
     color: #F5F5F5;
-    /* font-family: sans-serif, Arial, Helvetica; */
     font-family: serif, 'Times New Roman';
     text-align: center;
 }
@@ -159,65 +167,53 @@ header .firefly-header {
 .showcase-text h3 {
     margin: 40px 0 20px 0;
     font-size: 35px;
-    color:#e8491d;
+    color:#f16037;
 }
 
 .showcase-text h5 {
-    font-size: 30px;
-    margin: 0 30px 0 30px;
-    line-height: 2;
+    font-size: 31px;
+    margin: 15px 60px 0 60px;
+    line-height: 1.5;
 }
 
 .scroll-image {
-    padding: 30px;
+    padding-top: 25px;
     background-color: #35424a;
     text-align: center;
 }
 
+/*4 insurance pics*/
 .home-content-grid-container {
     display: grid;
     grid-template-areas: 
-        "a a a a a a a"
-        "b b b b c c c";
-    grid-gap: 10px;
+        "a a a a a a"
+        "b b b c c c";
+    grid-row-gap: 40px;
 }
 
 #boxes {
     grid-area: a;
     display: flex;
-    margin: 20px auto;
-    max-width: 1100px;
-    overflow:hidden;  
 }
 
 .box-container {
     display: flex;
-    justify-content: center;
-    width: 275px;
+    justify-content: center; 
+    width: 280px;
 }
 
 #boxes img {
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
-    color: floralwhite;  
-    width:  265px;
+    width:  250px;
     height: 200px;
     border-radius: 10px 10px 0 0;
-    border: rgb(255, 255, 255) 1px solid;
-}
-
-#boxes a {
-    text-decoration: none;
-    color: black;
-    justify-content: space-between;
-    border-radius: 10px;
 }
 
 #boxes h3 {
     display: flex;
     justify-content: center;
-    width: 263px;
+    width: 250px;
     margin: 0 auto;
     border-radius: 0 0 10px 10px;
     padding: 12px 0;
@@ -229,103 +225,94 @@ header .firefly-header {
     letter-spacing: 1px;  
 }
 
+#boxes a {
+    text-decoration: none;
+    border-radius: 10px;
+}
+
 #boxes h3:hover {
-    background-color:#e8491d;;
+    background-color:#f16037;;
     font-weight: bold;
 }
 
+/*welcome section*/
 #welcome {
     grid-area: b;
-    justify-self: end;
-    padding-right: 90px;
-    padding-top: 25px;
-    border-radius: 5px;
     max-width: 610px;
-    max-height: 340px;
+    margin-right: 100px;
 }
 
 #welcome h2 {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
     font-size:35px;
-    font-family: sans-serif, Arial, Helvetica;
-    color: #35424a;
-    margin: 25px auto;
+    font-weight: 500;
+}
+
+.welcome-knecht {
+    padding-left: 12px;
+    font-style: italic;
+    color: #f53e0b;
+    font-weight: 800;
 }
 
 #welcome p {
-    display: flex;
-    justify-content: center;
     text-align: center;
     font: 24px/1.5 Arial, Helvetica, sans-serif;
-    color: #35424a;
-    padding: 10px 15px;
-    border-bottom: 1px #cccccc solid;
+    padding-bottom: 15px;
+    border-bottom: 1px #ccc solid;
 }
 
 /*quote form */
 #sidebar {
     grid-area: c;
     justify-self: start;
-    flex-basis: 300px;
-    font-family: sans-serif, Arial, Helvetica;
-    padding-top: 30px;  
 }
 
 #sidebar .dark {
-    border-radius: 10px 10px 10px 10px;
-    padding: 0 15px;
-    width: 300px;
+    border-radius: 10px;
+    padding: 25px 15px;
+    width: 280px;
+}
+
+.firefly-quote {
+    margin: 0 auto;
+    padding: 10px 40px 0 0;
 }
 
 #sidebar h2 {
     display: flex;
-    font-size: 30px;
     justify-content: center;
-    color: #e8491d;
-    padding-top: 30px;
-    padding-bottom: 15px;
-    margin-top: 0;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 auto 10px auto;
+    padding-bottom: 8px;
+    font-size: 25px;
+    color: #f16037;
     text-transform: uppercase;
     border-bottom: 1px floralwhite solid;
 }
 
 #sidebar label {
-    padding: 10px 0;
     font-size: 20px;
-}
-
-#sidebar div {
-    margin-bottom: 20px;
-    margin-left:8px;
-}
-
-.quote {
-    font: 20px;
-    padding: 0 15px 15px 15px;
-}
-
-#sidebar input,
-#sidebar select,
-#sidebar textarea {
-    font-size: 16px;
 }
 
 #sidebar input {
     padding: 7px;
-    margin-top: 1px;
-    width: 90%;
+    margin: 4px auto 20px auto;
+    width: 93%;
 }
 
 #sidebar select {
     padding: 7px;
-    width: 97%;
-    margin-top: 1px;
+    width: 100%;
+    margin: 4px auto 20px auto;
 }
 
 #sidebar textarea {
-    width: 88%;
+    width: 90%;
     padding: 12px;
+    margin: 4px auto 0 auto;
 }
 
 #sidebar .button_1 {
@@ -333,17 +320,10 @@ header .firefly-header {
     display: block;
 }
 
-ul#services li {
-    list-style: none;
-    padding: 20px;
-    border: #cccccc solid 1px;
-    margin-bottom: 5px;
-    background: e6e6e6;
-}
-
+/*footer*/
 footer {
     padding: 40px;
-    margin-top:300px;
+    margin-top:90px;
     color:rgb(255, 250, 240);
     background-color:rgb(27, 31, 37);
     text-align: center;
@@ -364,8 +344,8 @@ footer {
     display: none;
 }
 
-.mobile-nav-hamburger {
-    border-bottom:#F5F5F5 3px solid;
+.mobile-nav-bar {
+    border-bottom: #f16037 3px solid;
 }
 
 .mobile-nav-item a:hover {
@@ -378,7 +358,7 @@ footer {
 }
 
 .social-icons i {
-    background-color: grey;
+    background-color: rgb(82, 81, 81);
 }
 
 @media (max-width: 1340px) {
@@ -388,27 +368,13 @@ footer {
             "b b b b b b b";
     }
     #boxes {
-        justify-self: end;
-        margin-left: -20px;
-        margin-right: 0;
+        margin: 0 0 0 -20px;
         display: grid;
-        grid-template: 285px 285px / 295px 295px;
-        justify-items: end;
-    }
-    #sidebar h2 {
-        padding-bottom: 25px;
-        padding-top: 35px;
-    }
-    #email-form-container {
-        height: 536px;
-        margin-top: -8px;
-    }
-    .quote {
-        padding: 10px 15px 15px 15px;
+        grid-template: 285px 285px / 285px 285px;
+        justify-self: end;
     }
     #welcome {
-        justify-self: center;
-        padding-right: 0;
+        margin: 0 auto;
     }
 }
 
@@ -418,12 +384,7 @@ footer {
     }
     #email-form-container {
         height: 520px;
-        margin-top: -8px;
     }
-    #sidebar .button_1 {
-        margin-top: -10px;
-        align-content: center;
-    }    
 }
 
 @media (max-width: 1165px) {
@@ -453,7 +414,7 @@ footer {
     .showcase-text {
         border-radius: 0 0 10px 10px;
         grid-area: text;
-        border-top:#e8491d 3px solid;
+        border-top:#f16037 3px solid;
     }
     .showcase-text h3 {
         display: none;
@@ -480,7 +441,7 @@ footer {
     #boxes {
         justify-self: end;
         display: grid;
-        grid-template: 270px 270px / 280px 280px;
+        grid-template: 260px 260px / 250px 250px;
         justify-items: end;
     }
     #boxes img {
@@ -550,24 +511,28 @@ footer {
     .mobile-nav-bar {
         display: block;
         font: 50px/1.5 sans-serif, Helvetica, sans-serif;
-        width:100%;
-        box-shadow: 0 3px 3px #535353;
+        width:100vw;
         background-color: rgb(102, 125, 148);
-        min-height: 50px;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        transition: height .5s ease;
+    }
+
+    .mobile-nav-bar.open {
+        height: 360px;
+        transition: height .9s ease;
     }
 
     .hide {
         display: none;
     }
-
     .large-screen-nav-bar {
         display: none;
     }
-
     header {
         display: none;
     }
-
     header {
         font-size: 30px;
         text-align: center;
