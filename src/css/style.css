@@ -376,18 +376,29 @@ footer p {
     }
     #boxes {
         display: grid;
-        grid-template: 280px 280px / 280px 280px;
+        grid-template: 280px 280px / 300px 300px;
         margin-right: auto;
         margin-left: auto;
         justify-items: center;
         transform: translate(76px, 0);
     }
+    #boxes img {
+        width: 280px;
+    }
     #sidebar .dark {
         margin-right: 0;
         height: 495px;
+        width: 270px;
     }
     #welcome {
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 1265px) {
+    #sidebar .dark {
+        width: 250px;
+        margin-left: 25px;
     }
 }
 
@@ -415,7 +426,7 @@ footer p {
         overflow: hidden;
         grid-area: picture;
     }
-    #showcase img {
+    #showcase .showcase-image {
         max-height: 450px;
         max-width: 100%;
         width: 900px;
