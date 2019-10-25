@@ -1,7 +1,11 @@
+/*universal selectors*/
 body {
-    padding:0px;
     margin:0px;
     background-color: #F5F5F5;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -15,36 +19,33 @@ ul {
 }
 
 .button_1 {
-    height: 38px;
-    background:#f16037;
+    height: 35px;
+    background:#fbb214;
     border: 0;
+    font-weight: 500;
     border-radius: 10px;
-    padding: 0 20px;
-    color:floralwhite;
-    font-size: 18px;   
+    padding: 0 15px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #35424a;
 }
 
 .dark {
     background:#35424a;
-    color: floralwhite; 
+    color: floralwhite;
 }
 
-.header-link {
-    text-decoration: none;
-}
-
+/*header*/
 header {
     background:#35424a;
-    color:#F5F5F5;
     padding-top: 10px;
     height: 150px;
-    border-bottom: #f16037 3px solid;
+    border-bottom: #fdbf34 3px solid;
 }
 
 header h1 {
     display: flex;
     justify-content: center;
-    padding-bottom: 0;
     margin-bottom: 0;
 }
 
@@ -58,22 +59,20 @@ header h1 {
 }
 
 .firefly-img {
-    display: block;
     margin: 0 auto;
-    padding-left: 29px;
-    padding-right: 29px;
-    padding-top: 27px;
+    padding: 27px 25px 0 29px;
 }
 
-header .firefly-header {
+.firefly-header {
     display: flex;
     justify-content: center;
-    font-size: 18px;
+    font-size: 16px;
     color: #ccc;
     padding-right: 106px;
     margin-top: -8px;
 }
 
+/*mobile styles*/
 #mobile-nav-links li {
     margin-left: auto;
     margin-right: auto;
@@ -82,10 +81,23 @@ header .firefly-header {
 
 #mobile-nav-links a {
     color: floralwhite;
-    text-decoration: none;
     text-transform: uppercase;
     font-size: 22px;
     padding-bottom: 5px;
+    transition: opacity 3s ease-in;
+}
+
+.mobile-nav-bar {
+    display: none;
+}
+
+.mobile-nav-bar {
+    border-bottom: #fdbf34 3px solid;
+}
+
+.mobile-nav-item a:hover {
+        background-color: #F5F5F5;
+        font-weight: bold;
 }
     
 #hamburger-menu {
@@ -101,13 +113,18 @@ header .firefly-header {
 }
 
 #hamburger-menu.active > div {
-    background-color: #f16037;
+    background-color: #fdbf34;
+}
+
+/*nav-bar*/
+.large-screen-nav-bar {
+    display: block;
 }
 
 .nav-bar {
     font: 50px/1.5 sans-serif, Helvetica, sans-serif;
     width:100%;
-    box-shadow: 0 3px 3px #535353;
+    box-shadow: 0 2px 2px #535353;
     background-color: rgb(102, 125, 148);
     height: 50px; 
 }
@@ -124,9 +141,8 @@ header .firefly-header {
 .nav-bar a {
     display: flex;
     color:floralwhite;
-    text-decoration: none;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 21px;
     padding: 5px;
 }
 
@@ -135,30 +151,29 @@ header .firefly-header {
 }
 
 .nav-bar a:hover {
-    color: #f16037;
-    transition: all 0.4s ease;
+    color: #fdbf34;
+    transition: all 0.4s ease-in;
 }
 
 /*showcase*/
 #showcase {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 425px;
+    grid-template-rows: 400px;
     margin: 40px auto;
-}
-
-.showcase-image {
-    border-radius: 0 10px 10px 0;
+    justify-items: center;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 #showcase img {
-    max-height: 450px;
+    max-width: 100%;
+    border-radius: 0 10px 10px 0;
 }
 
 .showcase-text {
     border-radius: 10px 0 0 10px;
-    background-color:#35424a;
+    background-color: #35424a;
     color: #F5F5F5;
     font-family: serif, 'Times New Roman';
     text-align: center;
@@ -167,7 +182,8 @@ header .firefly-header {
 .showcase-text h3 {
     margin: 40px 0 20px 0;
     font-size: 35px;
-    color:#f16037;
+    color:#fdbf34;
+    text-shadow: 2px 2px #000;
 }
 
 .showcase-text h5 {
@@ -178,28 +194,27 @@ header .firefly-header {
 
 .scroll-image {
     padding-top: 25px;
-    background-color: #35424a;
-    text-align: center;
+    background-color: #35424a;	   
+    text-align: center;	   
 }
 
 /*4 insurance pics*/
 .home-content-grid-container {
     display: grid;
     grid-template-areas: 
-        "a a a a a a"
-        "b b b c c c";
+        "a a a a a a a"
+        "b b b b c c c";
     grid-row-gap: 40px;
+    transform: translate(-18px, 0);
 }
 
 #boxes {
     grid-area: a;
-    display: flex;
+    display: flex; 
 }
 
 .box-container {
-    display: flex;
-    justify-content: center; 
-    width: 280px;
+    padding: 0 17px;
 }
 
 #boxes img {
@@ -208,31 +223,31 @@ header .firefly-header {
     width:  250px;
     height: 200px;
     border-radius: 10px 10px 0 0;
+    border: 1px rgb(102, 125, 148) solid;
 }
 
 #boxes h3 {
     display: flex;
     justify-content: center;
-    width: 250px;
     margin: 0 auto;
     border-radius: 0 0 10px 10px;
     padding: 12px 0;
     background-color: rgb(102, 125, 148);
     color:floralwhite;
-    text-transform: uppercase;
     font-family: sans-serif, Arial, Helvetica;
-    font-size: 24px;
-    letter-spacing: 1px;  
+    font-size: 26px;
+    letter-spacing: 2px;
+    box-shadow: 0 2px 2px #535353;
 }
 
 #boxes a {
-    text-decoration: none;
     border-radius: 10px;
 }
 
 #boxes h3:hover {
-    background-color:#f16037;;
+    background-color: #ce9a2b;;;
     font-weight: bold;
+    transition: all 0.4s ease-in;
 }
 
 /*welcome section*/
@@ -240,6 +255,8 @@ header .firefly-header {
     grid-area: b;
     max-width: 610px;
     margin-right: 100px;
+    padding-top: 18px;
+    padding-right: 50px;
 }
 
 #welcome h2 {
@@ -248,19 +265,18 @@ header .firefly-header {
     margin: 0 auto;
     font-size:35px;
     font-weight: 500;
+    font-style: italic;
 }
 
 .welcome-knecht {
     padding-left: 12px;
-    font-style: italic;
-    color: #f53e0b;
     font-weight: 800;
 }
 
 #welcome p {
     text-align: center;
     font: 24px/1.5 Arial, Helvetica, sans-serif;
-    padding-bottom: 15px;
+    padding-bottom: 50px;
     border-bottom: 1px #ccc solid;
 }
 
@@ -272,14 +288,15 @@ header .firefly-header {
 
 #sidebar .dark {
     border-radius: 10px;
-    padding: 25px 15px;
-    width: 280px;
+    padding: 25px 45px 17px 45px;
+    width: 220px;
+    margin-right: 40px;
 }
 
-.firefly-quote {
+/* .firefly-quote {
     margin: 0 auto;
     padding: 10px 40px 0 0;
-}
+} */
 
 #sidebar h2 {
     display: flex;
@@ -287,10 +304,10 @@ header .firefly-header {
     font-family: 'Times New Roman', Times, serif;
     margin: 0 auto 10px auto;
     padding-bottom: 8px;
-    font-size: 25px;
-    color: #f16037;
-    text-transform: uppercase;
-    border-bottom: 1px floralwhite solid;
+    font-size: 35px;
+    color: #fdbf34;
+    border-bottom: 1px #fefff04f solid;
+    text-shadow: 2px 2px #000;
 }
 
 #sidebar label {
@@ -322,39 +339,26 @@ header .firefly-header {
 
 /*footer*/
 footer {
-    padding: 40px;
-    margin-top:90px;
+    padding: 1px;
+    margin-top:40px;
     color:rgb(255, 250, 240);
     background-color:rgb(27, 31, 37);
     text-align: center;
+    border-top: #fdbf34 3px solid;
+}
+footer p {
+    margin: 0 auto;
+    padding: 0;
 }
 
 .social-icons {
-    margin: 20px;
+    margin: 15px;
     font-size: 30px;
 }
 
 .social-icons a {   
     color: inherit;
-    text-decoration: none;
     margin: 0 20px;
-}
-
-.mobile-nav-bar {
-    display: none;
-}
-
-.mobile-nav-bar {
-    border-bottom: #f16037 3px solid;
-}
-
-.mobile-nav-item a:hover {
-        background-color: #F5F5F5;
-        font-weight: bold;
-}
-
-.large-screen-nav-bar {
-    display: block;
 }
 
 .social-icons i {
@@ -367,33 +371,48 @@ footer {
             "a a a a c c c"
             "b b b b b b b";
     }
+    .box-container {
+        padding: 0;
+    }
     #boxes {
-        margin: 0 0 0 -20px;
         display: grid;
-        grid-template: 285px 285px / 285px 285px;
-        justify-self: end;
+        grid-template: 280px 280px / 300px 300px;
+        margin-right: auto;
+        margin-left: auto;
+        justify-items: center;
+        transform: translate(76px, 0);
+    }
+    #boxes img {
+        width: 280px;
+    }
+    #sidebar .dark {
+        margin-right: 0;
+        height: 495px;
+        width: 270px;
     }
     #welcome {
         margin: 0 auto;
     }
 }
 
-@media (max-width: 1215px) {
-    #boxes {
-        grid-template: 270px 270px / 280px 280px;
-    }
-    #email-form-container {
-        height: 520px;
+@media (max-width: 1265px) {
+    #sidebar .dark {
+        width: 250px;
+        margin-left: 25px;
     }
 }
 
 @media (max-width: 1165px) {
-    #boxes {
-        grid-template: 260px 260px / 270px 270px;
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
     }
     #email-form-container {
-        height: 510px;
-        margin-top: -8px;
+        height: 455px;
+    }
+    #sidebar .dark {
+        width: 231px;
+        height: 455px;
     }
     #showcase {
         grid-template-columns: 1fr;
@@ -402,19 +421,21 @@ footer {
             "picture"
             "text";
     }
-    #showcase img {
-        width: 100%;
-        max-height: 410px;
-    }
     .showcase-image {
         border-radius: 10px 10px 0 0;
         overflow: hidden;
         grid-area: picture;
     }
+    #showcase .showcase-image {
+        max-height: 450px;
+        max-width: 100%;
+        width: 900px;
+    }
     .showcase-text {
         border-radius: 0 0 10px 10px;
         grid-area: text;
-        border-top:#f16037 3px solid;
+        border-top:#fdbf34 2px solid;
+        width: 900px;
     }
     .showcase-text h3 {
         display: none;
@@ -427,52 +448,73 @@ footer {
     }
     .scroll-image {
         padding: 0;
-        max-width: 200px;
+        width: 200px;
     }
-} 
-
-@media (max-width: 1130px) {
-    .home-content-grid-container {
-        grid-template-areas: 
-            "a a a a a c c c"
-            "b b b b b b b b";
-            padding-right: 35px;
+    #sidebar div {
+        padding: 0;
+    }
+    #sidebar h2 {
+        font-size: 35px;
+        padding-bottom: 12px;
     }
     #boxes {
-        justify-self: end;
         display: grid;
         grid-template: 260px 260px / 250px 250px;
-        justify-items: end;
     }
     #boxes img {
-        box-sizing: border-box;
-        display: flex;
-        justify-content: space-between;
-        color: floralwhite;  
         width:  215px;
         height: 180px;
         border-radius: 10px 10px 0 0;
-        border: rgb(255, 255, 255) 1px solid;
     }
     #boxes h3 {
-        display: flex;
-        justify-content: center;
         width: 215px;
-        margin: 0;
-        border-radius: 0 0 10px 10px;
-        padding: 12px 0;
-        background-color: rgb(102, 125, 148);
-        color:floralwhite;
-        text-transform: uppercase;
-        font-family: sans-serif, Arial, Helvetica;
-        font-size: 24px;
-        letter-spacing: 1px;  
+        margin: 0; 
     }
     .box-container {
-        display: block;
         width: 250px;
     }
 }
+
+@media (max-width: 1000px) {
+    .container {
+        max-width: 800px;
+    }
+    #boxes {
+        grid-template: 250px 250px / 230px 230px;
+    }
+    #sidebar .dark {
+        width: 200px;
+        margin-left: 50px;
+        height: 446px;
+    }
+    #sidebar h2 {
+        font-size: 30px;
+    }
+    #showcase .showcase-image,
+    #showcase .showcase-text {
+        width: 90%;
+    }
+    #showcase .showcase-image {
+        align-self: end;
+        margin-bottom: -4px;
+        border-radius: 10px 10px 0 0;
+    }
+    #showcase .showcase-image img {
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+@media (max-width: 840px) {
+    .container {
+        max-width: 750px;
+    }
+    .box-container {
+        width: 240px;
+        padding-right: 30px
+    }
+    #showcase {
+        margin-top: 0;
+    }
 
 /*ipad mini size*/
 @media (max-width: 768px) {
