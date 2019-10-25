@@ -475,6 +475,47 @@ footer p {
     }
 }
 
+@media (max-width: 1000px) {
+    .container {
+        max-width: 800px;
+    }
+    #boxes {
+        grid-template: 250px 250px / 230px 230px;
+    }
+    #sidebar .dark {
+        width: 200px;
+        margin-left: 50px;
+        height: 446px;
+    }
+    #sidebar h2 {
+        font-size: 30px;
+    }
+    #showcase .showcase-image,
+    #showcase .showcase-text {
+        width: 90%;
+    }
+    #showcase .showcase-image {
+        align-self: end;
+        margin-bottom: -4px;
+        border-radius: 10px 10px 0 0;
+    }
+    #showcase .showcase-image img {
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+@media (max-width: 840px) {
+    .container {
+        max-width: 750px;
+    }
+    .box-container {
+        width: 240px;
+        padding-right: 30px
+    }
+    #showcase {
+        margin-top: 0;
+    }
+
 /*ipad mini size*/
 @media (max-width: 768px) {
     .home-content-grid-container {
