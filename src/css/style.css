@@ -19,21 +19,20 @@ ul {
 }
 
 .button_1 {
-    height: 38px;
-    background:#f16037;
+    height: 35px;
+    background:#fbb214;
     border: 0;
+    font-weight: 500;
     border-radius: 10px;
-    padding: 0 20px;
+    padding: 0 15px;
     margin: 0 auto;
-    color:floralwhite;
-    font-size: 19px;
-    text-shadow: 1px 2px #000;
+    font-size: 20px;
+    color: #35424a;
 }
 
 .dark {
     background:#35424a;
     color: floralwhite;
-    border: 2px #f16037 solid;
 }
 
 /*header*/
@@ -41,7 +40,7 @@ header {
     background:#35424a;
     padding-top: 10px;
     height: 150px;
-    border-bottom: #f16037 3px solid;
+    border-bottom: #fdbf34 3px solid;
 }
 
 header h1 {
@@ -57,7 +56,6 @@ header h1 {
     font-weight: lighter;
     padding-bottom: 0;
     letter-spacing: 2px;
-    text-shadow: 2px 2px #f16037;
 }
 
 .firefly-img {
@@ -94,7 +92,7 @@ header h1 {
 }
 
 .mobile-nav-bar {
-    border-bottom: #f16037 3px solid;
+    border-bottom: #fdbf34 3px solid;
 }
 
 .mobile-nav-item a:hover {
@@ -115,7 +113,7 @@ header h1 {
 }
 
 #hamburger-menu.active > div {
-    background-color: #f16037;
+    background-color: #fdbf34;
 }
 
 /*nav-bar*/
@@ -184,7 +182,7 @@ header h1 {
 .showcase-text h3 {
     margin: 40px 0 20px 0;
     font-size: 35px;
-    color:#f16037;
+    color:#fdbf34;
     text-shadow: 2px 2px #000;
 }
 
@@ -204,19 +202,19 @@ header h1 {
 .home-content-grid-container {
     display: grid;
     grid-template-areas: 
-        "a a a a a a"
-        "b b b c c c";
+        "a a a a a a a"
+        "b b b b c c c";
     grid-row-gap: 40px;
+    transform: translate(-18px, 0);
 }
 
 #boxes {
     grid-area: a;
-    display: flex;
+    display: flex; 
 }
 
 .box-container {
-    display: flex;
-    width: 275px;
+    padding: 0 17px;
 }
 
 #boxes img {
@@ -225,7 +223,7 @@ header h1 {
     width:  250px;
     height: 200px;
     border-radius: 10px 10px 0 0;
-    border: 1px black solid;
+    border: 1px rgb(102, 125, 148) solid;
 }
 
 #boxes h3 {
@@ -258,6 +256,7 @@ header h1 {
     max-width: 610px;
     margin-right: 100px;
     padding-top: 18px;
+    padding-right: 50px;
 }
 
 #welcome h2 {
@@ -290,7 +289,8 @@ header h1 {
 #sidebar .dark {
     border-radius: 10px;
     padding: 25px 45px 17px 45px;
-    width: 255px;
+    width: 220px;
+    margin-right: 40px;
 }
 
 /* .firefly-quote {
@@ -344,7 +344,7 @@ footer {
     color:rgb(255, 250, 240);
     background-color:rgb(27, 31, 37);
     text-align: center;
-    border-top: #f16037 3px solid;
+    border-top: #fdbf34 3px solid;
 }
 footer p {
     margin: 0 auto;
@@ -371,29 +371,20 @@ footer p {
             "a a a a c c c"
             "b b b b b b b";
     }
+    .box-container {
+        padding: 0;
+    }
     #boxes {
         display: grid;
-        grid-template: 340px 340px / 340px 340px;
+        grid-template: 280px 280px / 280px 280px;
         margin-right: auto;
         margin-left: auto;
         justify-items: center;
-    }
-    #boxes img {
-        width: 300px;
-        height: 250px;
-    }
-    #email-form-container {
-        height: 600px;
+        transform: translate(76px, 0);
     }
     #sidebar .dark {
-        width: 275px;
-    }
-    #sidebar h2 {
-        padding-bottom: 25px;
-        font-size: 40px;
-    }
-    #sidebar div {
-        padding: 10px;
+        margin-right: 0;
+        height: 495px;
     }
     #welcome {
         margin: 0 auto;
@@ -405,16 +396,12 @@ footer p {
         max-width: 900px;
         margin: 0 auto;
     }
-    #boxes {
-        grid-template: 290px 290px / 290px 290px;
-        margin-left: 131px;
-    }
     #email-form-container {
-        height: 500px;
-        margin-right: 127px;
+        height: 455px;
     }
     #sidebar .dark {
         width: 231px;
+        height: 455px;
     }
     #showcase {
         grid-template-columns: 1fr;
@@ -436,7 +423,7 @@ footer p {
     .showcase-text {
         border-radius: 0 0 10px 10px;
         grid-area: text;
-        border-top:#f16037 2px solid;
+        border-top:#fdbf34 2px solid;
         width: 900px;
     }
     .showcase-text h3 {
@@ -452,45 +439,27 @@ footer p {
         padding: 0;
         width: 200px;
     }
-
-    .home-content-grid-container {
-        grid-template-areas: 
-            "a a a a a c c c"
-            "b b b b b b b b";
-            padding-right: 35px;
+    #sidebar div {
+        padding: 0;
+    }
+    #sidebar h2 {
+        font-size: 35px;
+        padding-bottom: 12px;
     }
     #boxes {
-        justify-self: end;
         display: grid;
         grid-template: 260px 260px / 250px 250px;
-        justify-items: end;
     }
     #boxes img {
-        box-sizing: border-box;
-        display: flex;
-        justify-content: space-between;
-        color: floralwhite;  
         width:  215px;
         height: 180px;
         border-radius: 10px 10px 0 0;
-        border: rgb(255, 255, 255) 1px solid;
     }
     #boxes h3 {
-        display: flex;
-        justify-content: center;
         width: 215px;
-        margin: 0;
-        border-radius: 0 0 10px 10px;
-        padding: 12px 0;
-        background-color: rgb(102, 125, 148);
-        color:floralwhite;
-        text-transform: uppercase;
-        font-family: sans-serif, Arial, Helvetica;
-        font-size: 24px;
-        letter-spacing: 1px;  
+        margin: 0; 
     }
     .box-container {
-        display: block;
         width: 250px;
     }
 }
