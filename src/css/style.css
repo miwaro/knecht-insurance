@@ -56,6 +56,7 @@ header h1 {
     font-weight: lighter;
     padding-bottom: 0;
     letter-spacing: 2px;
+    text-shadow: 2px 2px rgb(102, 125, 148);
 }
 
 .firefly-img {
@@ -376,7 +377,7 @@ footer p {
     }
     #boxes {
         display: grid;
-        grid-template: 280px 280px / 300px 300px;
+        grid-template: 290px 290px / 315px 315px;
         margin-right: auto;
         margin-left: auto;
         justify-items: center;
@@ -398,7 +399,7 @@ footer p {
 @media (max-width: 1265px) {
     #sidebar .dark {
         width: 250px;
-        margin-left: 25px;
+        margin-left: 40px;
     }
 }
 
@@ -462,12 +463,12 @@ footer p {
         grid-template: 260px 260px / 250px 250px;
     }
     #boxes img {
-        width:  215px;
+        width:  230px;
         height: 180px;
         border-radius: 10px 10px 0 0;
     }
     #boxes h3 {
-        width: 215px;
+        width: 230px;
         margin: 0; 
     }
     .box-container {
@@ -476,16 +477,16 @@ footer p {
 }
 
 @media (max-width: 1000px) {
-    .container {
-        max-width: 900px;
+    .box-container {
+        width: 270px;
     }
     #boxes {
-        grid-template: 250px 250px / 230px 230px;
+        grid-template: 250px 250px / 240px 240px;
     }
     #sidebar .dark {
         width: 200px;
         margin-left: 50px;
-        height: 446px;
+        height: 444px;
     }
     #sidebar h2 {
         font-size: 30px;
@@ -504,20 +505,7 @@ footer p {
     }
 }
 
-@media (max-width: 840px) {
-    .container {
-        max-width: 820px;
-    }
-    .box-container {
-        width: 240px;
-        padding-right: 30px
-    }
-    #showcase {
-        margin: 20px;
-    }
-}
-
-@media (max-width: 800px) {
+@media (max-width: 860px) {
     .home-content-grid-container {
         display: grid;
         grid-template-areas: 
@@ -530,18 +518,18 @@ footer p {
     #boxes {
         justify-content: center;
         display: grid;
-        grid-template: 310px 310px / 360px 360px;
+        grid-template: 300px 300px / 308px 308px;
         margin-right: auto;
         margin-left: auto;
         justify-items: center;
         transform: translate(0, 0);
     }
     #boxes h3 {
-        width: 310px;
+        width: 290px;
     }
     #boxes img {
         justify-self: start;
-        width: 310px;
+        width: 290px;
         height: 225px;
     }
     #showcase {
@@ -554,19 +542,27 @@ footer p {
 
 /*ipad mini size*/
 @media (max-width: 768px) {
-    .home-content-grid-container {
-        grid-template-areas: 
-            "a a a a"
-            "a a a a"
-            "b b b c";
-    }
     .banner {
-        font-size: 69px;
-        font-style: italic;
-        color: #F5F5F5;
-        font-weight: lighter;
-        padding-bottom: 0;
-        letter-spacing: 2px;
+        font-size: 60px;
+    }
+    #boxes {
+        display: grid;
+        grid-template: 310px 310px / 350px 350px;
+        transform: translate(-10px, 0);
+    }
+    #boxes img {
+        width:  320px;
+        height: 225px;
+        border-radius: 10px 10px 0 0;
+    }
+    #boxes h3 {
+        width: 320px;
+        margin: 0; 
+    }
+    .firefly-img {
+        height: 35px;
+        width: 55px;
+        padding: 20px;
     }
     header .firefly-header {
         display: none;
@@ -577,11 +573,19 @@ footer p {
         margin-top: -8px;
     }
     header {
-        background: #35424a;
-        color: #F5F5F5;
         padding-bottom: 45px;
         height: 75px;
-        border-bottom: #F5F5F5 3px solid;
+    }
+    .home-content-grid-container {
+        padding-top: 10px;
+    }
+    #showcase {
+        grid-template-rows: 390px 140px;
+    }
+    #sidebar .dark {
+        justify-content: center;
+        width: 240px;
+        margin-left: 240px;
     }
 }
 
