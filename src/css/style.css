@@ -477,7 +477,7 @@ footer p {
 
 @media (max-width: 1000px) {
     .container {
-        max-width: 800px;
+        max-width: 900px;
     }
     #boxes {
         grid-template: 250px 250px / 230px 230px;
@@ -506,15 +506,51 @@ footer p {
 
 @media (max-width: 840px) {
     .container {
-        max-width: 750px;
+        max-width: 820px;
     }
     .box-container {
         width: 240px;
         padding-right: 30px
     }
     #showcase {
-        margin-top: 0;
+        margin: 20px;
     }
+}
+
+@media (max-width: 800px) {
+    .home-content-grid-container {
+        display: grid;
+        grid-template-areas: 
+            "a a a a"
+            "a a a a"
+            "b b b b" 
+            "c c c c";
+        grid-row-gap: 10px;
+    }
+    #boxes {
+        justify-content: center;
+        display: grid;
+        grid-template: 310px 310px / 360px 360px;
+        margin-right: auto;
+        margin-left: auto;
+        justify-items: center;
+        transform: translate(0, 0);
+    }
+    #boxes h3 {
+        width: 310px;
+    }
+    #boxes img {
+        justify-self: start;
+        width: 310px;
+        height: 225px;
+    }
+    #showcase {
+        margin: 10px;
+    }
+    #welcome {
+        padding-right: 0;
+    }
+}
 
 /*ipad mini size*/
 @media (max-width: 768px) {
