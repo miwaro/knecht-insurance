@@ -553,7 +553,6 @@ footer {
         background:rgb(102, 125, 148);
         border: yellow 1px solid;
         border-radius: 30px;
-        color: transparent;
     }
     #welcome {
         padding-top: 0;
@@ -609,7 +608,7 @@ footer {
         padding: 40px 20px 0 20px;
     }
     .footer-firefly {
-        padding-bottom: 15px;
+        padding: 15px;
     }
     header .firefly-header {
         display: none;
@@ -624,16 +623,70 @@ footer {
         height: 75px;
     }
     .home-content-grid-container {
-        padding-top: 10px;
+        padding-top: 25px;
+    }
+    .nav-bar ul {
+        border-bottom: #fdbf34 3px solid;
+    }
+    .nav-bar {
+        box-shadow: none;
+    }
+    #showcase > .showcase-image > img, #showcase > .showcase-text {
+        width: 100%;
+        margin: 0;
     }
     #showcase {
-        max-width: 55%;
-        margin-left: auto;
-        margin-right: auto;
-        transform: translate(-243px);
-        grid-template-rows: 390px 140px;
+        margin: 0 auto;
     }
+    .showcase-text h5 {
+        padding-right: 30px;
+    }
+    .scroll-image {
+        padding-right: 30px;
+    }
+}
 
+@media (max-width: 730px) {
+    .showcase-text h5 {
+        padding-right: 55px;
+    }
+    .scroll-image {
+        padding-right: 55px;
+    }
+}
+
+@media (max-width: 685px) {
+    .banner {
+        font-size: 48px;
+        padding-top: 25px;
+    }
+    /* #boxes {
+        display: grid;
+        grid-template: 240px 240px / 230px 230px;
+    }
+    #boxes img {
+        width:  220px;
+        height: 160px;
+        border-radius: 10px 10px 0 0;
+    }
+    #boxes h3 {
+        width: 220px;
+        margin: 0; 
+    } */
+    header {
+        height: 65px;
+    }
+    .firefly-img {
+        height: 37px;
+        width: 55px;
+        padding: 40px 20px 0 20px;
+    }
+    .showcase-text h5 {
+        padding-right: 70px;
+    }
+    .scroll-image {
+        padding-right: 70px;
+    }
 }
 
 @media (max-width: 450px) {
