@@ -160,7 +160,6 @@ header h1 {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 99%;
     margin: 40px auto;
-    /* justify-items: center; */
     border-radius: 10px;
 }
 
@@ -508,7 +507,7 @@ footer {
     }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 875px) {
     .home-content-grid-container {
         display: grid;
         grid-template-areas: 
@@ -521,19 +520,16 @@ footer {
     #boxes {
         justify-content: center;
         display: grid;
-        grid-template: 300px 300px / 308px 308px;
-        margin-right: auto;
-        margin-left: auto;
-        justify-items: center;
+        grid-template: 330px 330px / 340px 340px;
         transform: translate(0, 0);
     }
     #boxes h3 {
-        width: 290px;
+        width: 320px;
     }
     #boxes img {
         justify-self: start;
-        width: 290px;
-        height: 225px;
+        width: 320px;
+        height: 255px;
     }
     footer {
         margin-top: 0;
@@ -566,12 +562,32 @@ footer {
     #welcome p {
         padding-bottom: 10px;
     }
+
+    #showcase > .showcase-image > img,
+    #showcase > .showcase-text {
+        width: 77%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .showcase-text h5 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 830px) {
+    #showcase {
+        max-width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translate(-220px);
+    }
 }
 
 /*ipad mini size*/
 @media (max-width: 768px) {
     .banner {
-        font-size: 60px;
+        font-size: 55px;
+        padding-top: 30px;
     }
     #boxes {
         display: grid;
@@ -588,9 +604,12 @@ footer {
         margin: 0; 
     }
     .firefly-img {
-        height: 35px;
-        width: 55px;
-        padding: 20px;
+        height: 45px;
+        width: 60px;
+        padding: 40px 20px 0 20px;
+    }
+    .footer-firefly {
+        padding-bottom: 15px;
     }
     header .firefly-header {
         display: none;
@@ -608,6 +627,10 @@ footer {
         padding-top: 10px;
     }
     #showcase {
+        max-width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translate(-243px);
         grid-template-rows: 390px 140px;
     }
 
