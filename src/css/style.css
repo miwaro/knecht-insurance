@@ -50,13 +50,14 @@ header h1 {
 
 .banner {
     color: #F5F5F5;
+    font-family: 'Bree Serif', serif;
     font-size: 70px;
     font-style: italic;
     font-weight: lighter;
     letter-spacing: 2px;
-    padding-top: 40px;
-    text-shadow: 2px 2px rgb(102, 125, 148);
+    padding-top: 30px;
     text-transform: uppercase;
+    /* text-shadow: 2px 2px rgb(102, 125, 148); */
 }
 
 .firefly-img {
@@ -150,7 +151,7 @@ header h1 {
 
 .nav-bar a:hover {
     color: #fdbf34;
-    transition: all 0.4s ease-in;
+    /* transition: all 0.4s ease-in; */
 }
 
 /*showcase*/
@@ -197,6 +198,11 @@ h5 {
 
 .box-container {
     padding-right: 33px;
+    opacity: .9;
+}
+
+.box-container:hover {
+    opacity:1;
 }
 
 #boxes img {
@@ -230,6 +236,7 @@ h5 {
     background-color: #ce9a2b;;;
     font-weight: bold;
     transition: all 0.4s ease-in;
+    box-shadow: 0 2px 2px #7c5d1a;
 }
 
 /*welcome section*/
@@ -309,9 +316,25 @@ h5 {
     margin: 4px auto 0 auto;
 }
 
-#sidebar .button_1 {
+#success-button {
     margin: 18px auto 5px auto; 
     display: block;
+    cursor: pointer !important;
+}
+
+#success-message {
+    text-align: center;
+}
+
+#sidebar .button_1:hover {
+    background-color: #fcc650;
+} 
+
+#email-form input,
+#email-form select,
+#email-form textarea {
+    border-radius: 4px;
+    border-color: transparent;
 }
 
 /*footer*/
@@ -347,6 +370,10 @@ footer {
 
 .img-map {
     padding: 15px;
+}
+
+.hidden {
+    display: none !important;
 }
 
 @media (max-width: 1340px) {
