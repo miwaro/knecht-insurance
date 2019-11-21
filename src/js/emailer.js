@@ -17,6 +17,7 @@ const message = messageInput.value;
 // Event Listeners
 emailForm.addEventListener('submit', e => {
     e.preventDefault();
+    if (!formIsValid()) { return; }
     addSuccessMessage();
     sendEmail({ name, email, type, message });
 });
@@ -25,6 +26,12 @@ nameInput.addEventListener('focus', () => clearSuccessMessage());
 emailInput.addEventListener('focus', () => clearSuccessMessage());
 typeInput.addEventListener('focus', () => clearSuccessMessage());
 messageInput.addEventListener('focus', () => clearSuccessMessage());
+
+// UI and Display
+
+function formIsValid() {
+    return name && email;
+}
 
 function addSuccessMessage() {
     successButton.classList.add("hidden");
