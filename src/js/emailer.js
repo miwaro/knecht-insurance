@@ -1,31 +1,43 @@
-//Event Listener for Form Submit
-document.getElementById('email-form').addEventListener('submit', e => {
+// Config
+const serverURL = 'http://localhost:3002';
+
+// Grab onto DOM elements
+const emailForm = document.getElementById('email-form');
+const nameInput = document.getElementById('form-name');
+const emailInput = document.getElementById('form-email');
+const typeInput = document.getElementById('form-types');
+const messageInput = document.getElementById('form-message');
+const successMessage = document.getElementById('success-message');
+const successButton = document.getElementById('success-button');
+const name = nameInput.value;
+const email = emailInput.value;
+const type = typeInput.value;
+const message = messageInput.value;
+
+// Event Listeners
+emailForm.addEventListener('submit', e => {
     e.preventDefault();
-    
-    //Create variables for form elements
-    const nameInput = document.getElementById('form-name');
-    const emailInput = document.getElementById('form-email');
-    const typeInput = document.getElementById('form-types');
-    const messageInput = document.getElementById('form-message');
-    const formBody = document.getElementById('email-form-container');
-    
-    //Grab onto values of each form element
-    const name = nameInput.value;
-    const email = emailInput.value;
-    const type = typeInput.value;
-    const message = messageInput.value;
-
-    //Insert success message in form body
-    formBody.innerHTML = "<br><h4>Thank you for your message!</h4>";
-
-    //call send data function, passing in object with form data
-    sendEmail({
-        name: name,
-        email: email,
-        type: type,
-        message: message
-    });    
+    addSuccessMessage();
+    sendEmail({ name, email, type, message });
 });
+
+nameInput.addEventListener('focus', () => clearSuccessMessage());
+emailInput.addEventListener('focus', () => clearSuccessMessage());
+typeInput.addEventListener('focus', () => clearSuccessMessage());
+messageInput.addEventListener('focus', () => clearSuccessMessage());
+
+function addSuccessMessage() {
+    successButton.classList.add("hidden");
+    successMessage.innerHTML = "<br><h4>Thank you for your message!</h4>";
+    nameInput.value = '';
+    emailInput.value = '';
+    messageInput.value = '';
+}
+
+function clearSuccessMessage() {
+    successButton.classList.remove("hidden");
+    successMessage.innerHTML = "";
+}
 
 function sendEmail(data) {
     const XHR = new XMLHttpRequest();
@@ -52,7 +64,7 @@ function sendEmail(data) {
     });
 
     // Set up our request
-    XHR.open('POST', 'http://localhost:3002'); 
+    XHR.open('POST', serverURL);
 
     // Add the required HTTP header for form data POST requests
     XHR.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
