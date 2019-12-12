@@ -1,8 +1,13 @@
 /*universal selectors*/
+html {
+    height: 100%;
+}
 body {
     margin: 0 auto;
     background-color: #F5F5F5;
-    /* background-image: url(../img/wood.jpg); */
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -12,6 +17,10 @@ a {
 .container {
   max-width: 1100px;
   margin: 0 auto;
+}
+
+.contact-container {
+    display: flex;
 }
 
 ul {
@@ -130,7 +139,7 @@ header h1 {
     font: 50px/1.5 'Times New Roman', Times, serif;
     width:100%;
     box-shadow: 0 2px 2px #535353;
-    background-color: rgb(90, 120, 151);
+    background-color: rgb(90, 120, 151)
 }
 
 .nav-bar ul {
@@ -145,7 +154,7 @@ header h1 {
     display: flex;
     color:floralwhite;
     text-transform: uppercase;
-    font-size: 21px;
+    font-size: 23px;
     padding: 5px;
 }
 
@@ -181,19 +190,10 @@ header h1 {
     text-align: center;
 }
 
-/* #scroll-image {
-    height: 45px !important;
-} */
-/* #scroll-image {
-    margin-top: 44px;
-    width: 150px;
-} */
-
 h5 {
     font-size: 31px;
     font-weight: 900;
     margin: 50px 70px 30px 70px;
-    /* margin: -255px 70px 30px 70px; */
     line-height: 1.5;
     color: floralwhite;
 }
@@ -205,6 +205,7 @@ h5 {
         "a a a a"
         "b b c c";
     grid-row-gap: 40px;
+    margin-bottom: 100px;
 }
 
 #boxes {
@@ -237,7 +238,6 @@ h5 {
     font-family: 'Times New Roman', Times, serif;
     border-radius: 0 0 10px 10px;
     padding: 8px;
-    /* background-color: rgb(102, 125, 148); */
     background-color: rgb(90, 120, 151);
     color:floralwhite;
     font-size: 26px;
@@ -360,7 +360,8 @@ footer {
     color:rgb(255, 250, 240);
     background-color:rgb(27, 31, 37);
     text-align: center;
-    margin-top: 60px;
+    /* margin-top: 60px; */
+    margin-top: auto;
     border-top: #fdbf34 3px solid;
 }
 
@@ -400,6 +401,65 @@ footer {
 
 .phone-hide {
     display: block;
+}
+
+/*  Secondary Page Styles  */
+#secondary-page-container > * {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#secondary-page-container > .title {
+    text-align: center;
+    font-size: 44px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    max-width: 327px;
+}
+#secondary-page-container > .title .auto-second {
+    font-style: italic;
+    padding-right: 9px;
+}
+
+#secondary-page-container > #sidebar {
+    margin: 40px;
+}
+
+.secondary-page-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    height: 320px;
+    overflow-y: hidden;
+}
+
+.secondary-page-content > img {
+    border-radius: 10px 0 0 10px;
+    max-width: 320px;
+    min-width: 320px;
+    height: 319px;
+    border: 1px solid #000;
+}
+
+.secondary-page-content > .text {
+    max-width: 550px;
+    font-size: 26px;
+    text-align: center;
+    line-height: 2;
+    border-radius: 0 10px 10px 0;
+    padding: 25px;
+    outline-offset: -10px;
+    background-color:#35424a;
+    color:#F5F5F5;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    height: 270px;
+}
+
+.secondary-page-content > p {
+    
 }
 
 @media (max-width: 1340px) {
@@ -559,7 +619,9 @@ footer {
             "a a a a"
             "b b b b" 
             "c c c c";
+            margin-bottom: 0;
     }
+    
 
     #boxes {
         justify-content: center;
@@ -578,9 +640,9 @@ footer {
         width: 320px;
         height: 255px;
     }
-    footer {
+    /* footer {
         margin-top: 0;
-    }
+    } */
     #sidebar {
         background-image: url(../img/wood.jpg);
         width: 100vw;
@@ -738,9 +800,6 @@ footer {
 
 /*mobile sizes */
 @media (max-width: 550px) {
-    body {
-        background-image: url(../img/wood.jpg);
-    }
     .phone-show {
         display: block;
     }
@@ -748,11 +807,8 @@ footer {
         display: none;
     }
     .phone-welcome {
-        background-image: url(../img/wood.jpg);
         margin: 0;
-        color: rgb(255, 250, 240);
         padding-top: 60px !important;
-        background-color: rgb(102, 125, 148);
         max-width: 100vw !important;
         border-bottom: #fdbf34 3px solid
     }
@@ -764,7 +820,7 @@ footer {
         font-size: 33px;
     }
     .phone-welcome p {
-        font-size: 22px !important;
+        font-size: 22px;
         line-height: 1.8 !important;
         padding-left: 20px;
         padding-right: 20px;
@@ -874,8 +930,7 @@ footer {
         grid-area: box4;
     }
     #sidebar {
-        display: block;
-        height: 525px;
+        height: 580px;
     }
     #sidebar .dark {
         grid-area: quote;
@@ -910,7 +965,6 @@ footer {
     }
     #welcome p {
         border-bottom: none;
-        padding: 30px;
     }
 }
 
@@ -961,7 +1015,7 @@ footer {
         font-size: 20px;
     }
     #welcome p {
-        font-size: 16px
+        font-size: 18px;
     }
 
 }
@@ -989,7 +1043,7 @@ footer {
         margin: 6px 0;
     }
     #welcome p {
-        padding-bottom: none;
+  
     }
 }
 
