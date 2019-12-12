@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/menu.css">
+        <link rel="stylesheet" href="./css/contact.css">
         <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/5ab285bfd4.js"></script>
         <script src="/reload/reload.js"></script> 
@@ -24,14 +25,14 @@
             </div>
             <span class="mobile-header-container">
                 <h6 class="mobile-header"><span>Knecht</span>&nbsp;Insurance</h6>
-                <img class="firefly-mobile-img" src="./img/firefly.png" alt="Image" height="50" width="70">
+                <img class="firefly-mobile-img" src="./img/firefly.png">
             </span>
                    
             <div id="mobile-nav-links" class="mobile-nav-links hide">
                 <ul>
                     <li class="nav-item"><a href="index.html">Home</a></li>
-                    <li class="mobile-nav-item"><a href="https://www.fireflyagency.com/about-us/">About</a></li>
-                    <li class="mobile-nav-item"><a href="/contact.html">Contact</a></li>
+                    <li class="mobile-nav-item"><a href="about.html">About</a></li>
+                    <li class="mobile-nav-item"><a href="contact.html">Contact</a></li>
                 </ul> 
             </div>
         </div>   
@@ -52,82 +53,35 @@
         <div class="nav-bar large-screen-nav-bar">
             <nav>
                 <ul>
-                    <li class="nav-item current"><a href="/index.html">Home</a></li>
+                    <li class="nav-item"><a href="index.html">Home</a></li>
                     <li class="nav-item"><a href="https://www.fireflyagency.com/about-us/">About</a></li>
-                    <li class="nav-item"><a href="/contact.html">Contact</a></li>  
+                    <li class="nav-item current"><a href="contact.html">Contact</a></li>  
                 </ul> 
             </nav>
         </div>
-        <!-- Showcase -->
-        <div id="showcase" class="container">
-            <div class="showcase-text">
-                    <!-- <img id="scroll-image" src="./img/shield.png">  -->
-                <h5>Let us work to find the right insurance carrier fit for you.</h5>
-                <img id="scroll-image" src="./img/scroll.png" height="45" width="210">        
-            </div>
-
-            <div class="showcase-image">       
-                <img src="./img/showcase.jpg">
-            </div>        
+        <div>
+            <h1 class="contact">Contact Us</h1>
         </div>
-         <!-- Welcome Section Phones Size -->   
-         <section id="welcome" class="phone-welcome container phone-show">
-            <h2><span class="welcome-knecht">Welcome!</span></h2>
-            <p>
-                We have been serving the Montgomery County 
-                community for over 8 years. As a licensed Progressive Insurance agent in Crawfordsville, 
-                we can offer you the best rates on your auto, home, life, business insurance and more! 
-                Call today to get a free, no obligation quote!
-            </p>
-        </section>    
-        <!--The 4 Insurance Types pictures -->
-        <section class="home-content-grid-container">
-            <section id="boxes" class="container">
-                <div class="box-container">
-                    <a href="./types-of-insurance/auto.html" target="_blank">          
-                        <div class="auto-box">
-                            <img src="./img/auto.jpg">
-                            <h3>Auto</h3>
-                        </div>
-                    </a> 
-                </div>
-                <div class="box-container">
-                    <a href="./types-of-insurance/home.html" target="_blank"> 
-                        <div class="home-box">
-                            <img src="./img/home.jpg">
-                            <h3>Home</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="box-container">
-                    <a href="./types-of-insurance/business.html" target="_blank">   
-                        <div class="business-box">
-                            <img src="./img/business.jpg">
-                            <h3>Business</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="box-container">
-                    <a href="./types-of-insurance/life.html" target="_blank" >
-                        <div class="life-box">
-                            <img src="./img/life.jpg">
-                            <h3>Life</h3>
-                        </div>
-                    </a>
-                </div>
-            </section>
-            <!-- Welcome Section -->   
-            <section id="welcome" class="container phone-hide">
-                <h2>Welcome to <span class="welcome-knecht"> Knecht Insurance </span></h2>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam est suscipit
-                        blanditiis iusto, veritatis inventore dolorum nesciunt 
-                    fugit aliquid quod! Beatae ea nam debitis delectus doloremque quis iste quidem quibusdam.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam est suscipit
-                    blanditiis iusto, veritatis inventore dolorum nesciunt 
-                    fugit aliquid quod! Beatae ea nam debitis delectus doloremque quis iste quidem quibusdam.
-                </p>
-            </section>    
+        <div class="contact-container">
+            <img class="profile-pic" src="./img/knecht-profile-pic.png">
+            <div class="phone-section">
+                <i class="fas fa-phone"></i>
+                <h3>Call Us</h3>
+                <p>(765) 376-9881</p>
+                <h3>Office Hours:</h3>
+                <p>Monday-Friday | 9:00 AM - 4:30 PM</p>
+            </div>
+            <div class="email-section">
+                <i class="fas fa-envelope"></i>
+                <h3>Email Us</h3>
+                <p>knecht@gmail.com</p>
+            </div>
+            <div class="fax-section">
+                <i class="fas fa-fax"></i>
+                <h3>Fax Us</h3>
+                <p>1(888) 237-4910</p>
+            </div>
+        </div>    
             <!-- Quote Form -->        
             <aside id="sidebar">
                 <div class="dark container" id="email-form-container">
@@ -144,7 +98,7 @@
                         <div>
                             <label>Types of Insurance</label>
                             <select id="form-types" name="Type of Insurance Needed">
-                                <option value="">Type of Insurance</option>
+                                <option value="">Type of Insurance Needed</option>
                                 <option value="auto">Auto</option>
                                 <option value="home">Home</option>
                                 <option value="business">Business</option>
@@ -179,23 +133,24 @@
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
-            <div class="footer-contact-wrap">
-                <a href="tel:6147612825" target="_blank">
-                    (765) 339-4900 
-                </a> 
-                <a href="https://www.google.com/maps/place/655+Metro+Pl+S+%23330,
-                    +Dublin,+OH+43017/@40.0947617,-83.137608,17z/data=!3m1!4b
-                    1!4m5!3m4!1s0x8838933a87cbf015:0xa40e57a85f403b5c!8m2!3d40
-                    .0947617!4d-83.1354193" 
-                    target="_blank">
-                     | 655 Metro Pl S. Suite 330 Dublin, OH 43017﻿
-                </a>
-            </div>
+        </div>
+        <div class="footer-contact-wrap">
+            <a href="tel:6147612825" target="_blank">
+                (765) 339-4900 
+            </a> 
+            <a href="https://www.google.com/maps/place/655+Metro+Pl+S+%23330,
+                +Dublin,+OH+43017/@40.0947617,-83.137608,17z/data=!3m1!4b
+                1!4m5!3m4!1s0x8838933a87cbf015:0xa40e57a85f403b5c!8m2!3d40
+                .0947617!4d-83.1354193" 
+                target="_blank">
+                 | 655 Metro Pl S. Suite 330 Dublin, OH 43017﻿
+            </a>
+        </div>
             <img src="https://www.fireflyagency.com/wp-content/uploads/2018/03/footer-map-e1539740883462.png" class="center img-map" style="width: 264px; height: 164px;">
         </footer>
 
-        <script src="./js/emailer.js"></script>
-        <script src="./js/script.js"></script>
+        <script src="../js/emailer.js"></script>
+        <script src="../js/script.js"></script>
 
     </body>
 </html>

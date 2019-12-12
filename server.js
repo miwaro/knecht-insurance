@@ -16,17 +16,17 @@ app.use(allowCrossDomain);
 
 app.use(express.static(__dirname + '/src'));
 
-
 //load homepage
 app.get('/', (req, res) => {
     res.send('index.html');
 });
 
-//load about page
-app.get('/about', (req, res) => {
-    res.send('about.html');
+//load services page
+app.get('/services', (req, res) => {
+    res.send('services.html');
 });
 
 app.listen(port, () => {
     console.log(`Server is up on ${port}`);
 })
+
