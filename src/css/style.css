@@ -12,6 +12,7 @@ body {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .container {
@@ -125,10 +126,6 @@ header h1 {
     background-color: #fdd834;
     margin: 6px 0;
 }
-
-/* #hamburger-menu.active > header {
-    background-color: #F5F5F5;
-} */
 
 /*nav-bar*/
 .large-screen-nav-bar {
