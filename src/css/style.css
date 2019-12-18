@@ -405,7 +405,12 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
-
+.secondary-paragraph {
+    margin: 0; 
+}
+#scroll-image-p {
+    margin-top: 15px;
+}
 #secondary-page-container > .title {
     color: rgb(27, 31, 37);
     font-family: 'Times New Roman', Times, serif;
@@ -438,7 +443,7 @@ footer {
     max-width: 320px;
     min-width: 320px;
     height: 319px;
-    border: 1px solid #000;
+    border: 1px solid rgb(27, 31, 37);
 }
 
 .secondary-page-content > .text {
@@ -466,6 +471,7 @@ footer {
 
 .contact-container h3 {
     display: inline-block;
+    color:rgb(27, 31, 37);
 }
 
 .contact-container p {
@@ -488,12 +494,14 @@ footer {
     font-size: 40px;
     font-style: italic;
     text-decoration: underline;
+    color:rgb(27, 31, 37);
 }
 
 .contact-container img {
     margin-left: 40px;
     padding-bottom: 16px;
     border-radius: 140px;
+    color: rgb(90, 120, 151);
 }
 
 @media (max-width: 1340px) {
@@ -586,7 +594,8 @@ footer {
         width: 180px;
     }
     .secondary-page-content > .text {
-        font-size: 25px;  
+        font-size: 25px;
+    } 
 }
 
 @media (max-width: 1000px) {
@@ -698,6 +707,12 @@ footer {
     #boxes img {
         width: 320px;
         height: 255px;
+    }
+    .secondary-page-content > .text {
+        border-radius: 30px;
+    }
+    .secondary-page-content > img {
+        border-radius: 30px;
     }
     #sidebar {
         width: 100vw;
@@ -840,7 +855,7 @@ footer {
     .secondary-page-content > .text {
         line-height: 2;
         height: inherit;
-        max-width: 320px;
+        max-width: 272px;
     }
 }
 
@@ -1033,7 +1048,7 @@ footer {
     .secondary-page-content > .text {
         border-radius: none;
     }
-    #sidebar {
+    .wood-background > .dark {
         height: 580px;
     }
     #sidebar .dark {
@@ -1123,9 +1138,6 @@ footer {
         height: 2px;
         background-color: #fdd834;
         margin: 6px 0;
-    }
-    #welcome p {
-  
     }
 } 
 
