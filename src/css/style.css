@@ -481,6 +481,7 @@ footer {
     padding-bottom: 10px;
     border-bottom: 1px #ccc solid;
     margin-top: 0;
+    color:rgb(27, 31, 37);
 }
 
 .contact-content {
@@ -489,6 +490,9 @@ footer {
     font-size: 18px;
     padding-right: 40px;
     text-align: center;
+}
+.contact-content i {
+    color: rgb(90, 120, 151);
 }
 
 .contact {
@@ -504,7 +508,6 @@ footer {
     margin-left: 40px;
     padding-bottom: 16px;
     border-radius: 140px;
-    color: rgb(90, 120, 151);
 }
 
 @media (max-width: 1340px) {
