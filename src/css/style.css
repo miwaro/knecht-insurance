@@ -1103,7 +1103,11 @@ footer {
         box-shadow: none;
     }
     #secondary-page-container > .title {
-        margin-bottom: 0;
+        margin-top: 68px;
+        border: none !important;
+        font-size: 44px;
+        transform: translateY(20px);
+
     }
     .secondary-page-content {
         grid-gap: 0;
