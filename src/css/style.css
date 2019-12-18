@@ -960,7 +960,7 @@ footer {
     header, 
     .scroll-image,
     .large-screen-nav-bar,
-    .hide-sm {
+    .hide {
         display: none;
     }
     .home-content-grid-container {
