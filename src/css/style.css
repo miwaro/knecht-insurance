@@ -960,6 +960,9 @@ footer {
         top: 9px;
         right: 18px;
     }
+    .home-content-grid-container {
+        grid-gap: 0;
+    }
     .mobile-nav-bar {
         display: block;
         font: 50px/1.5 sans-serif, Helvetica, sans-serif;
