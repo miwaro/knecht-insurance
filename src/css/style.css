@@ -954,13 +954,13 @@ footer {
         padding-right: 10px;
     }
     .mobile-nav-bar.open {
-        height: 375px;
+        height: 300px;
         transition: height .9s ease;
     }
     header, 
     .scroll-image,
     .large-screen-nav-bar,
-    .hide {
+    .hide-sm {
         display: none;
     }
     .home-content-grid-container {
