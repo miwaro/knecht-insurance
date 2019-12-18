@@ -407,20 +407,21 @@ footer {
 }
 
 #secondary-page-container > .title {
+    color: rgb(27, 31, 37);
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 44px;
-    margin-top: 60px;
-    margin-bottom: 30px;
-    border: 1px solid black;
+    border: 1px solid rgb(27, 31, 37);;
     max-width: 327px;
 }
 #secondary-page-container > .title .auto-second {
+    color: rgb(90, 120, 151);
     font-style: italic;
     padding-right: 9px;
 }
 
 #secondary-page-container > #sidebar {
-    margin: 40px;
+    margin-bottom: 40px;
 }
 
 .secondary-page-content {
