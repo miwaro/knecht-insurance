@@ -53,7 +53,7 @@ ul {
 }
 
 .dark {
-    background:#35424a;
+    background: #35424a;
     color: floralwhite;
 }
 
@@ -182,25 +182,29 @@ header h1 {
 }
 
 #showcase img {
-    /* height: 100%; */
     max-width: 100%;
     border-radius: 10px;
 }
 
 .showcase-text {
-    outline: 1px solid #F5F5F5;
-    outline-offset: -8px;
     background-color: #35424a;
     color: #F5F5F5;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    box-shadow: -5px 6px 20px black;
+    background-image: url(../img/new-showcase-wood.png);
+    border-radius: 10px;
+}
+
+.hide-scroll {
+    display: none;
 }
 
 h5 {
-    font-size: 31px;
+    font-size: 35px;
     font-weight: 900;
-    margin: 50px 70px 30px 70px;
-    line-height: 1.5;
+    margin: 50px;
+    line-height: 1.7;
     color: floralwhite;
 }
 
@@ -211,7 +215,7 @@ h5 {
         "a a a a"
         "b b c c";
     grid-row-gap: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 
 #boxes {
@@ -304,6 +308,7 @@ h5 {
     border-radius: 10px;
     padding: 25px 45px 17px 45px;
     width: 258px;
+    box-shadow: -5px 6px 30px black;
 }
 
 #sidebar h2 {
@@ -589,9 +594,7 @@ footer {
     .showcase-text h5 {
         font-size: 30px;
         font-weight: 500;
-        line-height: 1;
-        margin: 25px auto;
-        margin-bottom: 10px;
+        margin: 35px auto;
     }
     #boxes {
         display: grid;
@@ -855,8 +858,7 @@ footer {
         height: 50%;
     }
     .showcase-text h5 {
-        font-size: 24px;
-        margin: 25px 0 10px 0;
+        font-size: 23px;
     }
     .scroll-image {
         width: auto;
@@ -900,8 +902,9 @@ footer {
         font-size: 19px;
     }
     .showcase-text h5 {
-        font-size: 22px;
-        margin-top: 30px;
+        font-size: 21px;
+        margin-top: 45px;
+        margin-left: 40px;
     }
 }
 
@@ -1019,6 +1022,8 @@ footer {
     .mobile-nav-bar.open {
         height: 300px;
         transition: height .9s ease;
+        background-image: url(../img/ice.jpg);
+        filter: brightness();
         background-repeat: round;
     }
     .phone-show {
@@ -1215,8 +1220,6 @@ footer {
         border-radius: 0;
         width: 100vw;
         padding: 40px 50px 75px 50px;
-        outline: 2px solid rgb(90, 120, 151);
-        outline-offset: -10px;
     }
     .secondary-dark {
         margin-bottom: -40px;
