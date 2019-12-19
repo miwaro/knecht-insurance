@@ -191,7 +191,7 @@ header h1 {
     color: #F5F5F5;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    box-shadow: -5px 6px 20px black;
+    /* box-shadow: -5px 6px 20px black; */
     background-image: url(../img/new-showcase-wood.png);
     background-size: cover;
     border-radius: 10px;
@@ -591,6 +591,8 @@ footer {
         border-radius: 0 0 10px 10px;
         grid-area: text;
         border-top:#fdbf34 2px solid;
+        background-image: url(../img/wood.jpg);
+        background-size: contain;
     }
     .showcase-text h5 {
         font-size: 30px;
@@ -921,7 +923,7 @@ footer {
         width:  100vw;
         height: 344px;
         border-radius: 0;
-        border-top: #fdbf34 2px solid;
+        /* border-top: #fdbf34 2px solid; */
     }
     #boxes h3 {
         width: inherit;
@@ -929,10 +931,12 @@ footer {
         margin: 0; 
         border-radius: 0;
         border-top: #fdbf34 2px solid;
+        border-bottom: #fdbf34 2px solid;
         background-image: url(../img/night.png);
         background-repeat: round no-repeat;
     }
     .box-container {
+        box-sizing: border-box;
         width: 100vw;
         padding-top: 0;
     }
@@ -969,7 +973,6 @@ footer {
         font: 50px/1.5 sans-serif, Helvetica, sans-serif;
         width: 100vw;
         height: 60px;
-        background-color: rgb(27, 31, 37);
         position: fixed;
         top: 0;
         z-index: 1;
@@ -991,7 +994,6 @@ footer {
         font-weight: 600;
         font-style: italic;
         text-transform: uppercase;
-        color: #2b353b;
         padding-right: 90px;
     }
     .mobile-header > span {
@@ -1129,10 +1131,11 @@ footer {
         grid-gap: 0;
     }
     .secondary-page-content > img {
+        box-sizing: border-box;
         height: 357px;
         border-radius: 0;
         border-bottom: none;
-        width: 99vw;
+        width: 100vw;
     }
     .secondary-page-content > .text {
         width: inherit;
@@ -1230,7 +1233,7 @@ footer {
 
 @media (max-width: 350px) {
     .container {
-        max-width: 330px;
+        max-width: 350px;
     }
 }
 
