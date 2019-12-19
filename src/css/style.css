@@ -62,7 +62,7 @@ header {
     background:#35424a;
     height: 160px;
     border-bottom: #fdbf34 3px solid;
-    background-image: url(../img/ice.jpg);
+    background-image: url(../img/night.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -943,7 +943,7 @@ footer {
         margin: 0; 
         border-radius: 0;
         border-top: #fdbf34 2px solid;
-        background-image: url(../img/ice.jpg);
+        background-image: url(../img/night.png);
         background-repeat: round no-repeat;
     }
     .box-container {
@@ -991,7 +991,7 @@ footer {
         transition: height .5s ease;
         margin: 0;
         padding-right: 30px;
-        background-image: url(../img/ice.jpg);
+        background-image: url(../img/night.png);
         background-repeat: round no-repeat;
         background-size: cover;
     }
@@ -1026,7 +1026,7 @@ footer {
     .mobile-nav-bar.open {
         height: 300px;
         transition: height .9s ease;
-        background-image: url(../img/ice.jpg);
+        background-image: url(../img/night.png);
         filter: brightness();
         background-repeat: round;
     }
