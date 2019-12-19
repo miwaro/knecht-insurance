@@ -861,11 +861,11 @@ footer {
         height: 35px;
         width: 50px;
     }
-    .showcase-text {
-        height: 50%;
-    }
     .showcase-text h5 {
-        font-size: 23px;
+        font-size: 26px;
+        margin-top: 23px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
     .scroll-image {
         width: auto;
@@ -883,11 +883,6 @@ footer {
     #welcome {
         max-width: 450px;
     }
-    /* .secondary-page-content > .text {
-        line-height: 2;
-        height: inherit;
-        max-width: 272px;
-    } */
 }
 
 @media (max-width: 600px) {
@@ -908,11 +903,11 @@ footer {
     .nav-bar a {
         font-size: 19px;
     }
-    .showcase-text h5 {
+    /* .showcase-text h5 {
         font-size: 21px;
         margin-top: 45px;
         margin-left: 40px;
-    }
+    } */
 }
 
 /*mobile sizes */
