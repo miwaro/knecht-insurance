@@ -187,19 +187,15 @@ header h1 {
 }
 
 .showcase-text {
-    /* position: relative; */
     background-color: #35424a;
     color: #F5F5F5;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     box-shadow: -5px 6px 20px black;
     background-image: url(../img/new-showcase-wood.png);
+    background-size: cover;
     border-radius: 10px;
 }
-
-/* .new-shocase-text {
-    position: absolute;
-} */
 
 .hide-scroll {
     display: none;
