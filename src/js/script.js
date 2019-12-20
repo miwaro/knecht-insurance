@@ -10,7 +10,6 @@ document.getElementById("hamburger-menu").addEventListener("click", toggleNavLin
 document.getElementById("quote-form-link").addEventListener("click", navigateToQuoteForm);
 
 function toggleNavLinks() {
-    console.log('toggle');
     var links = document.getElementById("mobile-nav-links");
     var hamburger = document.getElementById("hamburger-menu");
     var mobileNavbar = document.querySelector(".mobile-nav-bar");
