@@ -1,5 +1,4 @@
 const express = require('express');
-const reload = require('reload')
 
 const port = process.env.PORT || 3000;
 
