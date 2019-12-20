@@ -115,7 +115,9 @@ header h1 {
 }
 
 #mobile-nav-links a {
+    font-family: 'Times New Roman', Times, serif;
     color: floralwhite;
+    letter-spacing: 2px;
     text-transform: uppercase;
     font-size: 23px;
     transition: all .3s ease-in;
@@ -1016,10 +1018,9 @@ footer {
         padding-right: 10px;
     }
     .mobile-nav-bar.open {
-        height: 380px;
+        height: 375px;
         transition: height .9s ease;
         background-image: url(../img/night.png);
-        filter: brightness();
         background-repeat: round;
     }
     #mobile-nav-links li {
@@ -1200,7 +1201,7 @@ footer {
     }
     .mobile-header {
         font-size: 19px;
-        margin-top: 0;
+        margin-top: none;
         padding-right: 65px;
     }
     .mobile-header > span {
