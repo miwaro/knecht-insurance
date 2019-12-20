@@ -1,4 +1,4 @@
-window.addEventListener('load', (e) => {
+window.addEventListener('load', (_) => {
     window.scrollTo({
         top: 0,
         behavior: "smooth"
