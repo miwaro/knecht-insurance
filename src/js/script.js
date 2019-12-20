@@ -1,3 +1,11 @@
+
+window.addEventListener('load', (event) => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+    document.querySelector(".hide-until-load").classList.remove("hide-until-load");
+  });
 document.getElementById("hamburger-menu").addEventListener("click", toggleNavLinks);
 
 function toggleNavLinks() {

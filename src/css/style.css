@@ -16,6 +16,10 @@ body {
     background-size: cover;
 }
 
+.hide-until-load {
+    visibility: hidden;
+}
+
 a {
     text-decoration: none;
     cursor: pointer;
