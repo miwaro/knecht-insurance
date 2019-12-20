@@ -1,7 +1,15 @@
+window.addEventListener('load', (event) => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+    document.querySelector(".hide-until-load").classList.remove("hide-until-load");
+});
+
 document.getElementById("hamburger-menu").addEventListener("click", toggleNavLinks);
+document.getElementById("quote-form-link").addEventListener("click", navigateToQuoteForm);
 
 function toggleNavLinks() {
-    console.log('toggle');
     var links = document.getElementById("mobile-nav-links");
     var hamburger = document.getElementById("hamburger-menu");
     var mobileNavbar = document.querySelector(".mobile-nav-bar");
@@ -17,3 +25,10 @@ function toggleNavLinks() {
         mobileNavbar.classList.remove("open");
     }
 }
+
+function navigateToQuoteForm() {
+    toggleNavLinks();
+    var elmnt = document.getElementById("sidebar");
+    elmnt.scrollIntoView();
+}
+

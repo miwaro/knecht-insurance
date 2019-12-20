@@ -8,13 +8,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./css/menu.css">
         <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/5ab285bfd4.js"></script>
         <script src="/reload/reload.js"></script> 
     </head>
     
-    <body>
+    <body class="hide-until-load">
         <!--Copy of Nav Bar that will be hidden by default but then displayed in the mobile size after clicking on the hamburger-->
         <div class="mobile-nav-bar">
             <div id="hamburger-menu">
@@ -28,15 +27,14 @@
             </span>
                    
             <div id="mobile-nav-links" class="mobile-nav-links hide">
-                <ul>
-                    <li class="nav-item"><a href="index.html">Home</a></li>
+                <ul>  
                     <li class="mobile-nav-item"><a href="https://www.fireflyagency.com/about-us/">About</a></li>
                     <li class="mobile-nav-item"><a href="/contact.html">Contact</a></li>
+                    <li class="nav-item"><a id="quote-form-link">Get a Quote!</a></li>
                 </ul> 
             </div>
         </div>   
         <!--Header-->
-        <a class="header-link" href="index.html">
             <header>     
                 <div>
                     <h1>
@@ -47,13 +45,12 @@
                 </div>
                 <span class="firefly-header">a Firefly Agency</span> 
             </header>
-        </a>
         <!-- Nav Bar -->
         <div class="nav-bar large-screen-nav-bar">
             <nav>
                 <ul>
                     <li class="nav-item current"><a href="/index.html">Home</a></li>
-                    <li class="nav-item"><a href="https://www.fireflyagency.com/about-us/">About</a></li>
+                    <li class="nav-item"><a href="https://www.fireflyagency.com/about-us/" target="_blank">About</a></li>
                     <li class="nav-item"><a href="/contact.html">Contact</a></li>  
                 </ul> 
             </nav>
@@ -61,21 +58,19 @@
         <!-- Showcase -->
         <div id="showcase" class="container">
             <div class="showcase-text">
-                    <!-- <img id="scroll-image" src="./img/shield.png">  -->
-                <h5>Let us work to find the right insurance carrier fit for you.</h5>
-                <img id="scroll-image" src="./img/scroll.png" height="45" width="210">        
+                <h5 class="new-showcase-text">Let us work to find the right insurance carrier fit for you.</h5>
+                <img id="scroll-image" class="hide-scroll" src="./img/scroll.png" height="45" width="210">        
             </div>
-
             <div class="showcase-image">       
-                <img src="./img/showcase.jpg">
+                <img src="./img/showcase-cropped.jpg">
             </div>        
         </div>
          <!-- Welcome Section Phones Size -->   
          <section id="welcome" class="phone-welcome container phone-show">
             <h2><span class="welcome-knecht">Welcome!</span></h2>
             <p>
-                Hello, I have been serving communities of Indina and Illinois 
-                for over a decade now.  As an associate of the Firefly Agency I can offer you the best rates on your auto, home, life, 
+                Welcome, I have been serving the communities of Indiana and Illinois 
+                for over a decade now.  As an associate of the Firefly Agency, I can offer you the best rates on your auto, home, life, 
                 business insurance and more! Contact me today to get a free, no obligation quote!
             </p>
         </section>    
@@ -83,7 +78,7 @@
         <section class="home-content-grid-container">
             <section id="boxes" class="container">
                 <div class="box-container">
-                    <a href="./types-of-insurance/auto.html" target="_blank">          
+                    <a href="./types-of-insurance/auto.html">          
                         <div class="auto-box">
                             <img src="./img/auto.jpg">
                             <h3>Auto</h3>
@@ -91,7 +86,7 @@
                     </a> 
                 </div>
                 <div class="box-container">
-                    <a href="./types-of-insurance/home.html" target="_blank"> 
+                    <a href="./types-of-insurance/home.html"> 
                         <div class="home-box">
                             <img src="./img/home.jpg">
                             <h3>Home</h3>
@@ -99,16 +94,16 @@
                     </a>
                 </div>
                 <div class="box-container">
-                    <a href="./types-of-insurance/business.html" target="_blank">   
+                    <a href="./types-of-insurance/business.html">   
                         <div class="business-box">
                             <img src="./img/business.jpg">
                             <h3>Business</h3>
                         </div>
                     </a>
                 </div>
-                <div class="box-container">
-                    <a href="./types-of-insurance/life.html" target="_blank" >
-                        <div class="life-box">
+                <div class="box-container life-box">
+                    <a href="./types-of-insurance/life.html">
+                        <div>
                             <img src="./img/life.jpg">
                             <h3>Life</h3>
                         </div>
@@ -119,8 +114,8 @@
             <section id="welcome" class="container phone-hide">
                 <h2>Welcome to <span class="welcome-knecht"> Knecht Insurance </span></h2>
                 <p>
-                    Hello, I have been serving communities of Indina and Illinois 
-                    for over a decade now.  As an associate of the Firefly Agency I can offer you the best rates on your auto, home, life, 
+                    I have been serving the communities of Indiana and Illinois 
+                    for over a decade now.  As an associate of the Firefly Agency, I can offer you the best rates on your auto, home, life, 
                     business insurance and more! Contact me today to get a free, no obligation quote!
                 </p>
             </section>    
@@ -186,8 +181,11 @@
                     target="_blank">
                      | PO Box 605 Crawfordsville, IN 47933﻿﻿
                 </a>
+                
             </div>
-            <img src="https://www.fireflyagency.com/wp-content/uploads/2018/03/footer-map-e1539740883462.png" class="center img-map" style="width: 264px; height: 164px;">
+            <img src="https://www.fireflyagency.com/wp-content/uploads/2018/03/footer-map-e1539740883462.png" 
+                 class="center img-map" style="width: 264px; height: 164px;"
+            >
         </footer>
 
         <script src="./js/emailer.js"></script>
