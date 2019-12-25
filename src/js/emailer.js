@@ -1,6 +1,6 @@
 // Config
-const serverURL = 'https://damp-fjord-63452.herokuapp.com';
-// const serverURL = 'http://localhost:3002';
+// const serverURL = 'https://damp-fjord-63452.herokuapp.com';
+const serverURL = 'http://localhost:3002';
 
 // Grab onto DOM elements
 const emailForm = document.getElementById('email-form');
