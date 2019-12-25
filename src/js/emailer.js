@@ -1,5 +1,6 @@
 // Config
-const serverURL = 'https://damp-fjord-63452.herokuapp.com';
+// const serverURL = 'https://damp-fjord-63452.herokuapp.com';
+const serverURL = 'http://localhost:3002';
 
 // Grab onto DOM elements
 const emailForm = document.getElementById('email-form');
@@ -14,7 +15,6 @@ const successButton = document.getElementById('success-button');
 emailForm.addEventListener('submit', e => {
     e.preventDefault();
     if (!formIsValid()) { return; }
-    addSuccessMessage();
     sendEmail({
         name: nameInput.value,
         email: emailInput.value,
@@ -63,6 +63,7 @@ function sendEmail(data) {
 
     // Define what happens on successful data submission
     XHR.addEventListener('load', e => {
+        addSuccessMessage();
         console.log('Yeah! Data sent and response loaded.');
     });
 
