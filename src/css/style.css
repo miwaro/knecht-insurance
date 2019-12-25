@@ -378,7 +378,7 @@ footer {
     background-color:rgb(27, 31, 37);
     text-align: center;
     margin-top: auto;
-    border: #fdbf34 3px solid;
+    border-top: #fdbf34 3px solid;
 }
 
 .footer-firefly {
