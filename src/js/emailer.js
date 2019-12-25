@@ -9,17 +9,17 @@ const typeInput = document.getElementById('form-types');
 const messageInput = document.getElementById('form-message');
 const successMessage = document.getElementById('success-message');
 const successButton = document.getElementById('success-button');
-const name = nameInput.value;
-const email = emailInput.value;
-const type = typeInput.value;
-const message = messageInput.value;
 
 // Event Listeners
 emailForm.addEventListener('submit', e => {
     e.preventDefault();
     if (!formIsValid()) { return; }
-    addSuccessMessage();
-    sendEmail({ name, email, type, message });
+    sendEmail({
+        name: nameInput.value,
+        email: emailInput.value,
+        type: typeInput.value,
+        message: messageInput.value
+    });
 });
 
 nameInput.addEventListener('focus', () => clearSuccessMessage());
@@ -30,7 +30,7 @@ messageInput.addEventListener('focus', () => clearSuccessMessage());
 // UI and Display
 
 function formIsValid() {
-    return name && email;
+    return nameInput.value && emailInput.value;
 }
 
 function addSuccessMessage() {
@@ -62,6 +62,7 @@ function sendEmail(data) {
 
     // Define what happens on successful data submission
     XHR.addEventListener('load', e => {
+        addSuccessMessage();
         console.log('Yeah! Data sent and response loaded.');
     });
 
