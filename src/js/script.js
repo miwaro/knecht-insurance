@@ -1,10 +1,3 @@
-window.addEventListener('load', (_) => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-});
-
 document.getElementById("hamburger-menu").addEventListener("click", toggleNavLinks);
 document.getElementById("quote-form-link").addEventListener("click", navigateToQuoteForm);
 
