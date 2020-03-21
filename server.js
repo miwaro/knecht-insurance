@@ -14,7 +14,7 @@ const allowCrossDomain = (req, res, next) => {
 }
 app.use(allowCrossDomain);
 
-app.use(express.static(__dirname + '/src'));
+app.use(express.static(__dirname + '/build'));
 
 //load homepage
 app.get('/', (req, res) => {
