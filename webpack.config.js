@@ -25,7 +25,7 @@ module.exports = {
         query: {
           presets: ['@babel/preset-env']
         }
-      }
+      },
       {
         test: /\.css$/,
         use: [
