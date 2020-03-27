@@ -8,12 +8,16 @@ html {
 
 body {
     margin: 0 auto;
-    min-height: 100%;
+    min-height: initial;
     display: flex;
     flex-direction: column;
     background-image: url(../img/grey.jpg);
     background-repeat:no-repeat;
     background-size: cover;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
 }
 
 .hide-until-load {
@@ -342,7 +346,7 @@ h5 {
     padding: 7px;
     width: 100%;
     margin: 4px auto 20px auto;
-    min-height: 33px;
+    min-height: initial;
 }
 
 #sidebar textarea {

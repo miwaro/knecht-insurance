@@ -1,4 +1,4 @@
-/*universal selectors*/
+universal selectors
 html {
     height: 100%;
     background-image: url(../img/grey.jpg);
@@ -342,7 +342,7 @@ h5 {
     padding: 7px;
     width: 100%;
     margin: 4px auto 20px auto;
-    min-height: 33px;
+    min-height: initial;
 }
 
 #sidebar textarea {
