@@ -11,21 +11,24 @@ const successMessage = document.getElementById('success-message');
 const successButton = document.getElementById('success-button');
 
 // Event Listeners
-emailForm.addEventListener('submit', e => {
-    e.preventDefault();
-    if (!formIsValid()) { return; }
-    sendEmail({
-        name: nameInput.value,
-        email: emailInput.value,
-        type: typeInput.value,
-        message: messageInput.value
+if (emailForm) {
+    emailForm.addEventListener('submit', e => {
+        e.preventDefault();
+        if (!formIsValid()) { return; }
+        sendEmail({
+            name: nameInput.value,
+            email: emailInput.value,
+            type: typeInput.value,
+            message: messageInput.value
+        });
     });
-});
+}
+    
+if (nameInput) nameInput.addEventListener('focus', () => clearSuccessMessage());
 
-nameInput.addEventListener('focus', () => clearSuccessMessage());
-emailInput.addEventListener('focus', () => clearSuccessMessage());
-typeInput.addEventListener('focus', () => clearSuccessMessage());
-messageInput.addEventListener('focus', () => clearSuccessMessage());
+if (emailInput) emailInput.addEventListener('focus', () => clearSuccessMessage());
+if (typeInput) typeInput.addEventListener('focus', () => clearSuccessMessage());
+if (messageInput) messageInput.addEventListener('focus', () => clearSuccessMessage());
 
 // UI and Display
 
