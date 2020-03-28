@@ -1,4 +1,3 @@
-// import '../css/style.css';
 document.getElementById("hamburger-menu").addEventListener("click", toggleNavLinks);
 document.getElementById("quote-form-link").addEventListener("click", navigateToQuoteForm);
 
