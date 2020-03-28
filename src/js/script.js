@@ -1,5 +1,7 @@
-document.getElementById("hamburger-menu").addEventListener("click", toggleNavLinks);
-document.getElementById("quote-form-link").addEventListener("click", navigateToQuoteForm);
+const hamburgerMenu = document.getElementById("hamburger-menu");
+const quoteFormLink = document.getElementById("quote-form-link");
+if (hamburgerMenu) hamburgerMenu.addEventListener("click", toggleNavLinks);
+if (quoteFormLink) quoteFormLink.addEventListener("click", navigateToQuoteForm);
 
 function toggleNavLinks() {
     var links = document.getElementById("mobile-nav-links");
