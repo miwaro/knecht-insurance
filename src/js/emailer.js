@@ -1,5 +1,5 @@
 // Config
-const serverURL = 'https://www.damp-fjord-63452.herokuapp.com/';
+const serverURL = 'damp-fjord-63452.herokuapp.com/';
 
 // Grab onto DOM elements
 const emailForm = document.getElementById('email-form');
@@ -71,7 +71,7 @@ function sendEmail(data) {
 
     // Define what happens in case of error
     XHR.addEventListener('error', e => {
-        alert('Oops! Something goes wrong.');
+        console.log(e);
     });
 
     // Set up our request
