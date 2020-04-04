@@ -1,5 +1,6 @@
 // Config
-const serverURL = 'damp-fjord-63452.herokuapp.com/';
+// const serverURL = 'damp-fjord-63452.herokuapp.com/';
+// const serverURL = 'https://damp-fjord-63452.herokuapp.com/';
 
 // Grab onto DOM elements
 const emailForm = document.getElementById('email-form');
@@ -75,7 +76,7 @@ function sendEmail(data) {
     });
 
     // Set up our request
-    XHR.open('POST', serverURL);
+    XHR.open('POST', 'https://damp-fjord-63452.herokuapp.com/');
 
     // Add the required HTTP header for form data POST requests
     XHR.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
