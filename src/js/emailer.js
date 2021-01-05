@@ -24,7 +24,7 @@ if (emailForm) {
         });
     });
 }
-    
+
 if (nameInput) nameInput.addEventListener('focus', () => clearSuccessMessage());
 
 if (emailInput) emailInput.addEventListener('focus', () => clearSuccessMessage());
@@ -53,10 +53,10 @@ function clearSuccessMessage() {
 function sendEmail(data) {
     const XHR = new XMLHttpRequest();
     let urlEncodedData = "";
-    let urlEncodedDataPairs = []; 
+    let urlEncodedDataPairs = [];
 
     // Turn the data object into an array of URL-encoded key/value pairs.
-    for(let item in data) {
+    for (let item in data) {
         urlEncodedDataPairs.push(encodeURIComponent(item) + '=' + encodeURIComponent(data[item]));
     }
 
@@ -76,7 +76,7 @@ function sendEmail(data) {
     });
 
     // Set up our request
-    XHR.open('POST', 'https://damp-fjord-63452.herokuapp.com/');
+    XHR.open('POST', 'https://emailer-api-64581.herokuapp.com/');
 
     // Add the required HTTP header for form data POST requests
     XHR.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
