@@ -27,7 +27,6 @@ if (emailForm) {
 }
 
 if (nameInput) nameInput.addEventListener('focus', () => clearSuccessMessage());
-
 if (emailInput) emailInput.addEventListener('focus', () => clearSuccessMessage());
 if (typeInput) typeInput.addEventListener('focus', () => clearSuccessMessage());
 if (messageInput) messageInput.addEventListener('focus', () => clearSuccessMessage());
@@ -35,7 +34,8 @@ if (messageInput) messageInput.addEventListener('focus', () => clearSuccessMessa
 // UI and Display
 
 function formIsValid() {
-    return nameInput.value && emailInput.value && captcha.value;
+    console.log(captcha.value)
+    return nameInput.value && emailInput.value && captcha.value !== null;
 }
 
 function addSuccessMessage() {
