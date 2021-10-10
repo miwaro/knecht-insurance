@@ -12,6 +12,7 @@
         <script src="https://kit.fontawesome.com/5ab285bfd4.js"></script>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </head>
     
     <body>
@@ -160,6 +161,12 @@
                         <div>
                             <label>Message &#40optional&#41</label>
                             <textarea id="form-message"></textarea>
+                        </div>
+                        <div>
+                            <div class="g-recaptcha"
+                            data-sitekey="6LcmrrocAAAAAHw3Mj-cSvb4PDPAA3pkprBArnXZ">
+
+                            </div>
                         </div>
                         <div id="success-message"></div>
                         <button id="success-button" class="button_1" type="submit">Send</button>
