@@ -10,6 +10,7 @@ const typeInput = document.getElementById('form-types');
 const messageInput = document.getElementById('form-message');
 const successMessage = document.getElementById('success-message');
 const successButton = document.getElementById('success-button');
+const captcha = document.querySelector('#g-recaptcha-response')
 
 // Event Listeners
 if (emailForm) {
@@ -34,7 +35,7 @@ if (messageInput) messageInput.addEventListener('focus', () => clearSuccessMessa
 // UI and Display
 
 function formIsValid() {
-    return nameInput.value && emailInput.value;
+    return nameInput.value && emailInput.value && captcha.value;
 }
 
 function addSuccessMessage() {
