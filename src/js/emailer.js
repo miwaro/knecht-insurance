@@ -17,11 +17,13 @@ if (emailForm) {
     emailForm.addEventListener('submit', e => {
         e.preventDefault();
         if (!formIsValid()) { return; }
+        const captcha = document.querySelector('#g-recaptcha-response')
         sendEmail({
             name: nameInput.value,
             email: emailInput.value,
             type: typeInput.value,
-            message: messageInput.value
+            message: messageInput.value,
+            captcha: captcha.value
         });
     });
 }
