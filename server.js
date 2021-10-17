@@ -4,7 +4,6 @@ const port = process.env.PORT || 3000;
 
 const app = express();
 
-
 //Enable CORS
 const allowCrossDomain = (req, res, next) => {
     res.header('Access-Control-Allow-Origin', 'https://damp-fjord-63452.herokuapp.com/');

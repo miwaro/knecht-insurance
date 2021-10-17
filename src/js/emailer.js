@@ -1,6 +1,7 @@
 // Config
-// const serverURL = 'damp-fjord-63452.herokuapp.com/';
-// const serverURL = 'https://damp-fjord-63452.herokuapp.com/';
+const serverURL = 'https://emailer-api-64581.herokuapp.com/'
+// const serverURL = 'localhost:3002';
+
 
 // Grab onto DOM elements
 const emailForm = document.getElementById('email-form');
@@ -10,7 +11,6 @@ const typeInput = document.getElementById('form-types');
 const messageInput = document.getElementById('form-message');
 const successMessage = document.getElementById('success-message');
 const successButton = document.getElementById('success-button');
-const captcha = document.querySelector('#g-recaptcha-response')
 
 // Event Listeners
 if (emailForm) {
@@ -34,8 +34,9 @@ if (messageInput) messageInput.addEventListener('focus', () => clearSuccessMessa
 // UI and Display
 
 function formIsValid() {
-    console.log(captcha.value)
-    return nameInput.value && emailInput.value && captcha.value !== null;
+    const captcha = document.querySelector('#g-recaptcha-response')
+    console.log('captcha', captcha)
+    return nameInput.value && emailInput.value && captcha && captcha.value;
 }
 
 function addSuccessMessage() {
@@ -77,7 +78,7 @@ function sendEmail(data) {
     });
 
     // Set up our request
-    XHR.open('POST', 'https://emailer-api-64581.herokuapp.com/');
+    XHR.open('POST', serverURL);
 
     // Add the required HTTP header for form data POST requests
     XHR.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
