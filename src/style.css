@@ -316,7 +316,7 @@ h5 {
 #sidebar .dark {
     border-radius: 10px;
     padding: 25px 45px 17px 45px;
-    width: 258px;
+    width: 300px;
     box-shadow: -5px 6px 30px black;
 }
 
@@ -339,7 +339,7 @@ h5 {
 #sidebar input {
     padding: 7px;
     margin: 4px auto 20px auto;
-    width: 93%;
+    width: 96%;
 }
 
 #sidebar select {
@@ -350,9 +350,9 @@ h5 {
 }
 
 #sidebar textarea {
-    width: 90%;
+    width: 92%;
     padding: 12px;
-    margin: 4px auto 0 auto;
+    margin: 4px auto 20px auto;
 }
 
 #success-button {
@@ -518,6 +518,10 @@ footer {
 
 .contact-content i {
     color: rgb(90, 120, 151);
+}
+
+.rc-anchor-normal {
+    width: 200px !important;
 }
 
 .contact {
